@@ -10,7 +10,7 @@ It is a disciplined onboarding system for using ChatGPT as a working partner for
 ## Why this exists
 
 Most AI material is optimized for novelty and speed.
-High-stakes work in private credit — and serious personal performance management — require the opposite:
+High-stakes work in private credit requires the opposite:
 
 - precise framing
 - explicit assumptions
@@ -28,7 +28,7 @@ A repeatable operating model where ChatGPT helps you:
 
 1. **Think better** — expose hidden assumptions, stress-test logic, and map uncertainty.
 2. **Work faster without lowering standards** — compress first drafts, red-team your own conclusions, and tighten communication.
-3. **Run a coherent personal system** — apply the same rigor to training, nutrition, and skill development that you apply to investment work.
+3. **Decide with discipline** — separate facts from interpretation, alternatives from preferences, and confidence from evidence.
 
 ---
 

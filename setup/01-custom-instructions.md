@@ -40,9 +40,7 @@ Cover four blocks:
 
 Then append one compact **personal performance context** block.
 
-## Polished example: private credit operator identity (work + personal performance)
-
-Use or adapt the following as a high-quality baseline:
+## Polished example: private credit operator identity
 
 > I am a private credit professional focused on downside protection, covenant integrity, and risk-adjusted return.
 >
@@ -60,7 +58,8 @@ Use or adapt the following as a high-quality baseline:
 >
 > For investment-related analysis, include: core thesis, key risks, downside scenarios, mitigants, open questions, and next-step diligence requests.
 >
-> Personal operating context: I run a disciplined fitness routine, maintain a clean and controlled nutrition approach, and use golf as a deliberate skill-development domain. For these areas, prefer evidence-based recommendations, explicit trade-offs, measurable progression, and plans I can execute consistently.
+> Personal operating context: I also apply the same discipline and structured thinking outside of work. I maintain a consistent fitness routine, follow a clean and controlled nutrition approach, and use golf as a deliberate skill-development domain. In these areas, prefer evidence-based recommendations, explicit trade-offs, measurable progression, and plans that can be executed consistently without unnecessary complexity.
+
 
 ## Optional add-ons
 

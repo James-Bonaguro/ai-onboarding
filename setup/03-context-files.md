@@ -5,7 +5,7 @@
 Context files are leverage assets: they encode durable knowledge once and reuse it across workflows.
 They are the difference between repeatedly explaining your world and operating with persistent analytical memory.
 
-## Two context planes: work and personal performance
+### Two context planes: work and personal performance
 
 For high-performing professionals, durable context should cover both:
 
@@ -26,16 +26,14 @@ High-quality personal context improves:
 
 ## What to include
 
-### Work context files
-
 Start with files that materially improve decision quality:
-
 - investment mandate and risk appetite,
 - credit policy and underwriting standards,
 - covenant framework and definitions,
 - sector watchlists and red-flag indicators,
 - memo templates and decision rubrics.
 
+codex/create-premium-onboarding-repository-structure-x1a2eg
 ### Personal performance context files
 
 Add high-signal files that improve execution consistency:
@@ -45,7 +43,7 @@ Add high-signal files that improve execution consistency:
 - `golf_notes.md`
 - `personal_operating_preferences.md`
 
-Prioritize relevance over volume.
+Prioritize relevance over volume.  
 A focused file set beats a bloated archive.
 
 ## File design standards
@@ -63,11 +61,11 @@ Avoid dumping raw notes without curation.
 
 ### Work
 
-1. `investment-principles.md`
-2. `underwriting-checklist.md`
-3. `covenant-risk-map.md`
-4. `ic-memo-template.md`
-5. `watchlist-triggers.md`
+1. `investment_principles.md`
+2. `underwriting_checklist.md`
+3. `covenant_risk_map.md`
+4. `ic_memo_template.md`
+5. `watchlist_triggers.md`
 
 ### Personal
 
@@ -77,6 +75,8 @@ Avoid dumping raw notes without curation.
 4. `personal_operating_preferences.md`
 
 Treat these as controlled documents with clear owners.
+
+---
 
 ## Example snippets
 
@@ -92,7 +92,7 @@ Treat these as controlled documents with clear owners.
 - Increase strength-to-bodyweight ratio while keeping recovery stable
 
 ## Non-negotiables
-- Session length <= 60 minutes on weekdays
+- Session length ≤ 60 minutes on weekdays
 - No high-fatigue plan changes during heavy work weeks
 ```
 
@@ -114,7 +114,7 @@ Treat these as controlled documents with clear owners.
 ```markdown
 ## Skill profile
 - Strength: driver distance
-- Weakness: approach dispersion from 120-170 yards
+- Weakness: approach dispersion from 120–170 yards
 
 ## Practice constraints
 - 2 range sessions/week max
@@ -124,6 +124,9 @@ Treat these as controlled documents with clear owners.
 - Track GIR%, proximity trend, and up-and-down rate monthly
 ```
 
+Treat these as controlled documents with clear owners.
+
+main
 ## How to use in practice
 
 When initiating a task:
@@ -145,4 +148,4 @@ If context files drift from real operating standards, model performance degrades
 ## Bottom line
 
 Context files are not documentation overhead.
-They are infrastructure for consistent, high-quality AI-assisted work and personal performance execution.
+They are infrastructure for consistent, high-quality AI-assisted work and personal execution.
