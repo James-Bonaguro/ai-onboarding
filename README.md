@@ -3,7 +3,7 @@
 **A private operating manual for professionals who think in first principles, evidence, and decisions.**
 
 This repository is not an AI tutorial and not a prompt library.
-It is a disciplined onboarding system for using ChatGPT as a working partner for analysis, synthesis, and execution-quality thinking.
+It is a disciplined onboarding system for using ChatGPT as a working partner for analysis, synthesis, and execution-quality thinking across both professional work and high-signal personal performance domains.
 
 ---
 
@@ -16,7 +16,7 @@ High-stakes work in private credit requires the opposite:
 - explicit assumptions
 - traceable reasoning
 - adversarial challenge
-- crisp output structures that can survive investment committee scrutiny
+- crisp output structures that can survive scrutiny
 
 `ai-onboarding` is built for that standard.
 
@@ -49,6 +49,10 @@ Phase 1 establishes foundational doctrine and setup.
 - [03 — Context Files](setup/03-context-files.md)
 - [04 — Voice Mode](setup/04-voice-mode.md)
 
+### Applied onboarding and examples
+- [Onboarding 02 — First Conversations](onboarding/02-first-conversations.md)
+- [Examples 02 — Real Conversation Patterns](examples/02-real-conversation-patterns.md)
+
 ---
 
 ## Design principles
@@ -57,13 +61,14 @@ Phase 1 establishes foundational doctrine and setup.
 - **No mystique:** model behavior is engineered through constraints and context, not magic phrases.
 - **No passive consumption:** each concept is meant to be used immediately in real workflows.
 - **No unearned confidence:** uncertainty should be surfaced, not hidden.
+- **No false separation:** the same operating model should work across work and personal performance domains.
 
 ---
 
 ## Intended user
 
 A skeptical, analytical professional who is comfortable with complexity and allergic to hype.
-Someone who values rigor over vibes and wants AI outputs that are inspection-ready.
+Someone who values rigor over vibes and wants AI outputs that are inspection-ready in both investment work and personal execution systems.
 
 ---
 
@@ -73,7 +78,7 @@ Use this repository as an internal playbook:
 
 - read doctrine to set mental models,
 - implement setup to shape model behavior,
-- run real work through the system,
+- run real work and personal performance workflows through the same system,
 - iterate until outputs match your professional bar.
 
 If the model sounds smooth but cannot defend its logic, the system is misconfigured.
