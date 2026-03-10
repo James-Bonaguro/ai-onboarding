@@ -37,6 +37,7 @@ A repeatable operating model where ChatGPT helps you:
 Phase 1 establishes foundational doctrine and setup.
 
 ### Doctrine
+- [00 — AI Operating Model](doctrine/00-ai-operating-model.md)
 - [01 — AI Is Not Google](doctrine/01-ai-is-not-google.md)
 - [02 — Context Is the Interface](doctrine/02-context-is-the-interface.md)
 - [03 — Collaboration Over Prompts](doctrine/03-collaboration-over-prompts.md)
