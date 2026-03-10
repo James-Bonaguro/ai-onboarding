@@ -1,3 +1,29 @@
+# AI Operating System for Knowledge Work
+
+This repository teaches how to use AI as a **collaborative reasoning system**, not a search engine.
+
+Instead of prompt tricks, the framework focuses on structured interaction:
+
+Context → Objective → Constraints → Iteration
+
+---
+
+## Start Here (2 minutes)
+
+1. Read the core operating model  
+→ doctrine/00-ai-operating-model.md
+
+2. Understand the key principles  
+→ doctrine/
+
+3. Configure AI correctly  
+→ setup/
+
+4. See real usage patterns  
+→ examples/
+
+---
+
 # AI Onboarding
 
 **A private operating manual for professionals who think in first principles, evidence, and decisions.**
