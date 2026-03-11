@@ -1,111 +1,48 @@
-# AI Operating System for Knowledge Work
+# AI Operating System — Setup Guide
 
-This repository teaches how to use AI as a **collaborative reasoning system**, not a search engine.
+## What This Is
 
-Instead of prompt tricks, the framework focuses on structured interaction:
+Every AI tool you're using right now is running on default settings. It doesn't know who you are, what you do, or what good work looks like at your firm. That's why the outputs feel generic. This fixes that.
 
-Context → Objective → Constraints → Iteration
+## Why This Comes First
 
----
+You're about to spend the next three months watching YouTube videos about "the best AI prompts." That's like memorizing pickup lines instead of learning how to hold a conversation.
 
-## Start Here (2 minutes)
+The people who actually get good outputs aren't copying prompts from the internet. They set up their AI correctly first. That means:
 
-1. Read the core operating model  
-→ doctrine/00-ai-operating-model.md
+- It knows who you are and what you do
+- It knows what good work looks like at your firm
+- It knows what to avoid
+- It pushes back on bad logic instead of agreeing with everything
 
-2. Understand the key principles  
-→ doctrine/
+**Without this foundation, every prompt hack, plugin, and Excel integration you try will produce mediocre results.** With it, even basic questions produce work you can actually use.
 
-3. Configure AI correctly  
-→ setup/
+## How This Is Organized
 
-4. See real usage patterns  
-→ examples/
+**1. The Five Rules** — Read these once. They take 5 minutes. They change how you think about using AI forever.
 
----
+**2. Setup** — Copy-paste instructions to configure your AI. Takes 15 minutes. You do this once.
 
-# AI Onboarding
+**3. Getting Started** — Your first real conversation with a properly configured AI. Includes exact examples.
 
-**A private operating manual for professionals who think in first principles, evidence, and decisions.**
+**4. Applied Examples** — Real before-and-after workflows showing the difference between default AI and configured AI.
 
-This repository is not an AI tutorial and not a prompt library.
-It is a disciplined onboarding system for using ChatGPT as a working partner for analysis, synthesis, and execution-quality thinking across both professional work and high-signal personal performance domains.
+## The Payoff
 
----
+After setup, your AI will:
 
-## Why this exists
+- Write in your firm's voice, not generic corporate speak
+- Know your role, your seniority, and what decisions you actually make
+- Challenge your logic instead of just agreeing with you
+- Produce first drafts that need 20% editing instead of 80%
+- Remember your preferences across every conversation
 
-Most AI material is optimized for novelty and speed.
-High-stakes work in private credit requires the opposite:
+## Important Note on Excel, PowerPoint, and Other Tools
 
-- precise framing
-- explicit assumptions
-- traceable reasoning
-- adversarial challenge
-- crisp output structures that can survive scrutiny
+Yes — AI connects to Excel, PowerPoint, email, and everything else you use daily. But plugging AI into Excel without doing this setup first is like hiring an analyst who doesn't know your firm, your standards, or what a good model looks like. You'll spend more time fixing their output than doing it yourself.
 
-`ai-onboarding` is built for that standard.
+**Foundation first. Tools second. That's the sequence.**
 
 ---
 
-## What you are building
-
-A repeatable operating model where ChatGPT helps you:
-
-1. **Think better** — expose hidden assumptions, stress-test logic, and map uncertainty.
-2. **Work faster without lowering standards** — compress first drafts, red-team your own conclusions, and tighten communication.
-3. **Decide with discipline** — separate facts from interpretation, alternatives from preferences, and confidence from evidence.
-
----
-
-## Phase 1 scope
-
-Phase 1 establishes foundational doctrine and setup.
-
-### Doctrine
-- [00 — AI Operating Model](doctrine/00-ai-operating-model.md)
-- [01 — AI Is Not Google](doctrine/01-ai-is-not-google.md)
-- [02 — Context Is the Interface](doctrine/02-context-is-the-interface.md)
-- [03 — Collaboration Over Prompts](doctrine/03-collaboration-over-prompts.md)
-- [04 — Iteration Is the Skill](doctrine/04-iteration-is-the-skill.md)
-- [05 — Challenge, Not Agreement](doctrine/05-challenge-not-agreement.md)
-
-### Setup
-- [01 — Custom Instructions](setup/01-custom-instructions.md)
-- [02 — Projects](setup/02-projects.md)
-- [03 — Context Files](setup/03-context-files.md)
-- [04 — Voice Mode](setup/04-voice-mode.md)
-
-### Applied onboarding and examples
-- [Onboarding 02 — First Conversations](onboarding/02-first-conversations.md)
-- [Examples 02 — Real Conversation Patterns](examples/02-real-conversation-patterns.md)
-
----
-
-## Design principles
-
-- **No fluff:** if a sentence does not improve decision quality, remove it.
-- **No mystique:** model behavior is engineered through constraints and context, not magic phrases.
-- **No passive consumption:** each concept is meant to be used immediately in real workflows.
-- **No unearned confidence:** uncertainty should be surfaced, not hidden.
-- **No false separation:** the same operating model should work across work and personal performance domains.
-
----
-
-## Intended user
-
-A skeptical, analytical professional who is comfortable with complexity and allergic to hype.
-Someone who values rigor over vibes and wants AI outputs that are inspection-ready in both investment work and personal execution systems.
-
----
-
-## Standard of use
-
-Use this repository as an internal playbook:
-
-- read doctrine to set mental models,
-- implement setup to shape model behavior,
-- run real work and personal performance workflows through the same system,
-- iterate until outputs match your professional bar.
-
-If the model sounds smooth but cannot defend its logic, the system is misconfigured.
+Start here → [The Five Rules](doctrine/01-stop-asking-questions.md)
