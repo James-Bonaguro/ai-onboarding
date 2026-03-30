@@ -1,48 +1,37 @@
-# AI Operating System — Setup Guide
+# AI Onboarding System
 
-## What This Is
+An opinionated setup guide for professionals who want to use AI as a reasoning partner — not a search engine.
 
-Every AI tool you're using right now is running on default settings. It doesn't know who you are, what you do, or what good work looks like at your firm. That's why the outputs feel generic. This fixes that.
+Most people start with AI by typing questions and hoping for good answers. That's the wrong frame. This system teaches you to configure your AI tools around *your* work, *your* decisions, and *your* context — so every interaction compounds instead of starting from zero.
 
-## Why This Comes First
+## Who This Is For
 
-You're about to spend the next three months watching YouTube videos about "the best AI prompts." That's like memorizing pickup lines instead of learning how to hold a conversation.
+Professionals in finance, consulting, operations, or any knowledge work role who want to stop getting generic AI outputs and start getting results that reflect how they actually think and work.
 
-The people who actually get good outputs aren't copying prompts from the internet. They set up their AI correctly first. That means:
+Current examples are drawn from private credit and finance workflows, but the system applies to any knowledge work domain.
 
-- It knows who you are and what you do
-- It knows what good work looks like at your firm
-- It knows what to avoid
-- It pushes back on bad logic instead of agreeing with everything
+## What's Inside
 
-**Without this foundation, every prompt hack, plugin, and Excel integration you try will produce mediocre results.** With it, even basic questions produce work you can actually use.
+| Folder | Purpose |
+|--------|---------|
+| `setup/` | Step-by-step configuration for ChatGPT, Claude, and other tools — custom instructions, memory setup, project organization |
+| `doctrine/` | Core principles for working with AI effectively — how to prompt, when to push back, what to delegate vs. what to own |
+| `agents/` | Pre-built agent configurations for common professional workflows |
+| `examples/` | Real examples showing the difference between default AI usage and configured AI usage |
 
-## How This Is Organized
+## The Core Idea
 
-**1. The Five Rules** — Read these once. They take 5 minutes. They change how you think about using AI forever.
+Every AI tool runs on default settings out of the box. It doesn't know who you are, what you do, or what good work looks like in your field. That's why outputs feel generic. This system fixes that by giving you a structured way to teach your AI tools about your context before you start asking them to do work.
 
-**2. Setup** — Copy-paste instructions to configure your AI. Takes 15 minutes. You do this once.
+## How to Use
 
-**3. Getting Started** — Your first real conversation with a properly configured AI. Includes exact examples.
+Start with `setup/` — work through each configuration step for your primary AI tool. Then read `doctrine/` to internalize the principles. The agents and examples are reference material you'll come back to as your usage matures.
 
-**4. Applied Examples** — Real before-and-after workflows showing the difference between default AI and configured AI.
+## Built With
 
-## The Payoff
+Claude, ChatGPT, Gemini, and Perplexity — using each tool where it's strongest.
 
-After setup, your AI will:
+## Contact
 
-- Write in your firm's voice, not generic corporate speak
-- Know your role, your seniority, and what decisions you actually make
-- Challenge your logic instead of just agreeing with you
-- Produce first drafts that need 20% editing instead of 80%
-- Remember your preferences across every conversation
-
-## Important Note on Excel, PowerPoint, and Other Tools
-
-Yes — AI connects to Excel, PowerPoint, email, and everything else you use daily. But plugging AI into Excel without doing this setup first is like hiring an analyst who doesn't know your firm, your standards, or what a good model looks like. You'll spend more time fixing their output than doing it yourself.
-
-**Foundation first. Tools second. That's the sequence.**
-
----
-
-Start here → [The Five Rules](doctrine/01-stop-asking-questions.md)
+Built by [James Bonaguro](https://github.com/James-Bonaguro) — Intersection Strategies LLC
+james@intersectionstrategies.co
