@@ -45,4 +45,4 @@ The second version works because you told it what you have, what you need, what 
 
 ---
 
-Next → [Rule 4: Your First Answer Is a First Draft](04-first-draft-not-final-draft.md)
+[← Previous: It Knows Nothing About You](02-it-knows-nothing-about-you.md) | [Next: Your First Answer Is a First Draft →](04-first-draft-not-final-draft.md)

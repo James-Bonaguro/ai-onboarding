@@ -56,3 +56,7 @@ Use when you're reaching out to a new contact, following up after an introductio
 - Emails sound like a real person wrote them, not a marketing template
 - Follow-up sequences maintain tone without becoming annoying
 - Referral intros lead to meetings at 50%+ conversion
+
+---
+
+[← Previous: Portfolio Monitoring Agent](04-portfolio-monitoring-agent.md) | [Next: Orchestrator →](06-orchestrator.md)

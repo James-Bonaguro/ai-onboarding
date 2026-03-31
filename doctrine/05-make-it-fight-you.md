@@ -50,4 +50,4 @@ Same input from you. Completely different value in the response.
 
 ---
 
-You've read the five rules. Now set it up → [Setup Guide](../setup/01-getting-configured.md)
+[← Previous: First Draft, Not Final Draft](04-first-draft-not-final-draft.md) | [Next: How You Actually Get Good →](06-how-you-actually-get-good.md)

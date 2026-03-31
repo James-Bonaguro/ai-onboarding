@@ -56,3 +56,7 @@ Use when quarterly reporting comes in and you need to review multiple portfolio 
 - Reduces quarterly portfolio review time by 50%+
 - Produces watch list recommendations that match what senior credit would flag
 - Leadership summaries are clean enough to send without heavy editing
+
+---
+
+[← Previous: Market Intelligence Agent](03-market-intelligence-agent.md) | [Next: Outreach Agent →](05-outreach-agent.md)

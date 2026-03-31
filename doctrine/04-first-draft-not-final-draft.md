@@ -52,4 +52,4 @@ Most people quit after Round 1. That's like reading the first draft of anything 
 
 ---
 
-Next → [Rule 5: Make It Fight You](05-make-it-fight-you.md)
+[← Previous: Talk To It Like a New Analyst](03-talk-to-it-like-a-new-analyst.md) | [Next: Make It Fight You →](05-make-it-fight-you.md)

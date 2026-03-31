@@ -53,3 +53,7 @@ Use when you have raw material — a CIM, your own notes, a model, a call summar
 - Risk flags match or exceed what the committee would catch
 - Memo tone matches your firm's actual standards (not generic AI voice)
 - Total time from raw notes to usable draft: under 20 minutes
+
+---
+
+[← Previous: Before vs. After Examples](../examples/01-before-vs-after.md) | [Next: Deal Screening Agent →](02-deal-screening-agent.md)

@@ -61,4 +61,4 @@ Set it up once. Benefit forever.
 
 ---
 
-Next → [Rule 3: Talk To It Like a New Analyst](03-talk-to-it-like-a-new-analyst.md)
+[← Previous: Stop Asking Questions](01-stop-asking-questions.md) | [Next: Talk To It Like a New Analyst →](03-talk-to-it-like-a-new-analyst.md)

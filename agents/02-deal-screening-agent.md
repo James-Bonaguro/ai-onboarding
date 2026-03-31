@@ -53,3 +53,7 @@ Use when a new deal hits your desk and you need to decide quickly whether it's w
 - Saves 30+ minutes per deal on initial screening
 - Surfaces risks that would have come up later in diligence
 - Produces screening notes clean enough to share with your team or PM
+
+---
+
+[← Previous: IC Memo Drafter](01-ic-memo-drafter.md) | [Next: Market Intelligence Agent →](03-market-intelligence-agent.md)

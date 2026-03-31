@@ -55,4 +55,4 @@ Voice-to-text doesn't produce clean, structured input. That's actually the point
 
 ---
 
-Now set it up → [Setup Guide](../setup/01-getting-configured.md)
+[← Previous: Make It Fight You](05-make-it-fight-you.md) | [Next: Getting Configured →](../setup/01-getting-configured.md)

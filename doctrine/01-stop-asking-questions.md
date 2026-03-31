@@ -41,4 +41,4 @@ If it's a question, rewrite it as a task. Every time.
 
 ---
 
-Next → [Rule 2: It Knows Nothing About You](02-it-knows-nothing-about-you.md)
+[Next: It Knows Nothing About You →](02-it-knows-nothing-about-you.md)

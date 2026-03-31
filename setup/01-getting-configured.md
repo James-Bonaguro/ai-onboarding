@@ -67,7 +67,7 @@ Open a new conversation and type something simple:
 
 This is the foundation. Every conversation from here forward is running on your custom configuration. The five rules you just read will compound on top of this.
 
-**Next step:** Work through the examples to see what configured AI actually looks like in practice → [Examples](../examples/)
+Next, you'll see real examples of what configured AI looks like in practice.
 
 ---
 
@@ -78,3 +78,7 @@ This is the foundation. Every conversation from here forward is running on your 
 | Your background | "About You" / Custom Instructions | AI knows your role, your firm, your standards |
 | Response style | "How to Respond" / Custom Instructions | AI matches your tone and pushes back instead of agreeing |
 | Everything else | Your conversations | Each chat builds on this foundation |
+
+---
+
+[← Previous: How You Actually Get Good](../doctrine/06-how-you-actually-get-good.md) | [Next: Before vs. After Examples →](../examples/01-before-vs-after.md)

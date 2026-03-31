@@ -56,3 +56,7 @@ Use when you're looking at a deal in an industry you don't know well and need to
 - Data points are specific and verifiable, not vague generalities
 - Analysis surfaces risks and dynamics that aren't in the CIM's industry section
 - Output quality matches what a junior analyst would produce in 2-3 days of research
+
+---
+
+[← Previous: Deal Screening Agent](02-deal-screening-agent.md) | [Next: Portfolio Monitoring Agent →](04-portfolio-monitoring-agent.md)

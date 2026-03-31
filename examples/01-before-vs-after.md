@@ -132,3 +132,7 @@ Notice what's the same across every example:
 4. It suggests next steps — because it knows what your workflow looks like
 
 This is what the five rules and the setup create. Not better prompts. Better infrastructure.
+
+---
+
+[← Previous: Getting Configured](../setup/01-getting-configured.md) | [Next: IC Memo Drafter →](../agents/01-ic-memo-drafter.md)
