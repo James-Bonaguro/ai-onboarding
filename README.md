@@ -1,4 +1,4 @@
-# AI Operating System — Setup Guide
+# AI Operating System Setup Guide
 
 ## What This Is
 
@@ -19,13 +19,13 @@ The people who actually get good outputs aren't copying prompts from the interne
 
 ## How This Is Organized
 
-**1. The Five Rules** — Read these once. They take 5 minutes. They change how you think about using AI forever.
+**1. The Five Rules** - Read these once. They take 5 minutes. They change how you think about using AI forever.
 
-**2. Setup** — Copy-paste instructions to configure your AI. Takes 15 minutes. You do this once.
+**2. Setup** - Copy-paste instructions to configure your AI. Takes 15 minutes. You do this once.
 
-**3. Getting Started** — Your first real conversation with a properly configured AI. Includes exact examples.
+**3. Getting Started** - Your first real conversation with a properly configured AI. Includes exact examples.
 
-**4. Applied Examples** — Real before-and-after workflows showing the difference between default AI and configured AI.
+**4. Applied Examples** - Real before-and-after workflows showing the difference between default AI and configured AI.
 
 ## The Payoff
 
@@ -39,7 +39,7 @@ After setup, your AI will:
 
 ## Important Note on Excel, PowerPoint, and Other Tools
 
-Yes — AI connects to Excel, PowerPoint, email, and everything else you use daily. But plugging AI into Excel without doing this setup first is like hiring an analyst who doesn't know your firm, your standards, or what a good model looks like. You'll spend more time fixing their output than doing it yourself.
+Yes - AI connects to Excel, PowerPoint, email, and everything else you use daily. But plugging AI into Excel without doing this setup first is like hiring an analyst who doesn't know your firm, your standards, or what a good model looks like. You'll spend more time fixing their output than doing it yourself.
 
 **Foundation first. Tools second. That's the sequence.**
 
