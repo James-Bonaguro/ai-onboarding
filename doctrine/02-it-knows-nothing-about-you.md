@@ -17,9 +17,13 @@ It's like hiring someone and never telling them what company they work for. Of c
 Every AI tool lets you store background information about yourself. This runs silently behind every conversation. Once you set it up, every single output improves automatically.
 
 **In ChatGPT:** Settings → Personalization → Custom Instructions
+
 **In Claude:** Settings → Profile → Custom Instructions
 
+**Microsoft Copilot:** Enterprise Copilot often doesn't expose this setting. The setup guide shows the workaround.
+
 You fill this in once. It takes 15 minutes. Then it works forever.
+
 
 ## What To Put In There
 
