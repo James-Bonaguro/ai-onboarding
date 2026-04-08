@@ -22,7 +22,7 @@ Every AI tool lets you store background information about yourself. This runs si
 
 **Microsoft Copilot:** Enterprise Copilot often doesn't expose this setting. The setup guide shows the workaround.
 
-You fill this in once. It takes 15 minutes. Then it works forever.
+You fill this in once. It takes 15-20 minutes. Then it works forever.
 
 
 ## What To Put In There
