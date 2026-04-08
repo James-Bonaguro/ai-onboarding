@@ -2,7 +2,7 @@
 
 ## The Problem
 
-Open ChatGPT or Claude right now. It has no idea:
+Open your AI right now. It has no idea:
 
 - What your job is
 - What industry you're in

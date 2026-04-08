@@ -1,5 +1,8 @@
 # AI Operating System Setup Guide
 
+Someone sent you this because they think it'll make your work faster.
+Start at The Five Rules. Plan on 45 minutes.
+
 ## What This Is
 
 Every AI tool you're using right now is running on default settings. It doesn't know who you are, what you do, or what good work looks like at your firm. That's why the outputs feel generic. This fixes that.
@@ -36,6 +39,17 @@ After setup, your AI will:
 - Challenge your logic instead of just agreeing with you
 - Produce first drafts that need 20% editing instead of 80%
 - Remember your preferences across every conversation
+
+## The Agents
+
+Once you've finished setup, there are six pre-built specialists designed for specific finance and outreach workflows. Each one is a system prompt you copy and paste into a new conversation — they live in the agents folder linked below.
+
+- [IC Memo Drafter](agents/01-ic-memo-drafter.md) — Structures investment committee memos from raw deal notes and CIM extracts into presentable first drafts.
+- [Deal Screening Agent](agents/02-deal-screening-agent.md) — Filters incoming deal flow against your firm's criteria and tells you in 5 minutes if a deal is worth your time.
+- [Market Intelligence Agent](agents/03-market-intelligence-agent.md) — Builds competitive landscape and industry analysis for a specific sector in hours instead of weeks.
+- [Portfolio Monitoring Agent](agents/04-portfolio-monitoring-agent.md) — Synthesizes quarterly reporting and portfolio data into actionable risk flags and performance summaries.
+- [Outreach Agent](agents/05-outreach-agent.md) — Generates targeted outreach content tailored to the recipient's industry, role, and specific pain points.
+- [Orchestrator](agents/06-orchestrator.md) — Coordinates multi-step workflows across AI platforms when a task is too complex for a single conversation.
 
 ## Important Note on Excel, PowerPoint, and Other Tools
 

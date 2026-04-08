@@ -17,6 +17,11 @@ You're going to paste some text into your AI's settings. This text runs behind e
 - Click "Profile"
 - You'll see a "Custom Instructions" box
 
+**Microsoft Copilot:**
+- Enterprise Copilot deployments often restrict or remove custom instructions entirely. This depends on how your firm's IT configured it — you may not have a settings page at all.
+- **Workaround:** Paste a context block at the start of each new conversation. It's an extra step, but it works.
+- Copy the "About You" template from Step 2 below and paste it at the top of every new chat before your first message. Start it with: "Before we begin, here's context about me and how I work:"
+
 ## Step 2: Fill in "About You"
 
 Copy the template below. Replace everything in [brackets] with your actual information. Delete any lines that don't apply.
