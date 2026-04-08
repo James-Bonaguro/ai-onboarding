@@ -1,61 +1,66 @@
-# AI Operating System Setup Guide
+# The AI Operating System — Private Credit Edition
 
-Someone sent you this because they think it'll make your work faster.
-Start at The Five Rules. Plan on 45 minutes.
+Someone sent you this because they think it'll make your work faster and make you visibly better at your job.
 
-## What This Is
+This isn't a tutorial. It's a field manual and a six-week practice program. If you work through it, you'll be the person at your firm who actually knows how to use AI — not the person who claims they do.
 
-Every AI tool you're using right now is running on default settings. It doesn't know who you are, what you do, or what good work looks like at your firm. That's why the outputs feel generic. This fixes that.
+---
 
-## Why This Comes First
+## Read This First
 
-You're about to spend the next three months watching YouTube videos about "the best AI prompts." That's like memorizing pickup lines instead of learning how to hold a conversation.
+Your firm has probably told you, in one form or another, that AI competence is now part of staying on track for promotion. Most people are going to respond to that by watching YouTube videos about "the best prompts." That's like memorizing pickup lines instead of learning how to hold a conversation. You're going to do something different.
 
-The people who actually get good outputs aren't copying prompts from the internet. They set up their AI correctly first. That means:
+There are four things that make someone actually good at using AI for analytical work:
 
-- It knows who you are and what you do
-- It knows what good work looks like at your firm
-- It knows what to avoid
-- It pushes back on bad logic instead of agreeing with everything
+1. A correct mental model for what AI is and isn't
+2. A properly configured tool that knows who you are and what good work looks like at your firm
+3. Reps — daily, structured, boring practice until it becomes instinct
+4. A system for turning AI wins into visibility at your firm
 
-**Without this foundation, every prompt hack, plugin, and Excel integration you try will produce mediocre results.** With it, even basic questions produce work you can actually use.
+This repo is built around those four things, in that order. Skip none of them.
 
-## How This Is Organized
+---
 
-**1. The Five Rules** - Read these once. They take 5 minutes. They change how you think about using AI forever.
+## How to Work Through This
 
-**2. Setup** - Copy-paste instructions to configure your AI. Takes 15 minutes. You do this once.
+### Step 1 — The Five Rules (one hour)
+Read [doctrine/01 through 06](doctrine/01-stop-asking-questions.md) in order. This is the mental model. One hour total. Do not skip Rule 6 — it is the most important one and nobody else teaches it.
 
-**3. Getting Started** - Your first real conversation with a properly configured AI. Includes exact examples.
+### Step 2 — Get Configured (30 minutes)
+Work through [setup/01-getting-configured.md](setup/01-getting-configured.md). By the end of this you'll have Copilot, Claude, or ChatGPT set up with persistent context about who you are and what your firm's standards look like. Then read [setup/02-copilot-power-moves.md](setup/02-copilot-power-moves.md) if you're on Microsoft 365 Copilot (most private credit firms are). This is where the real leverage is.
 
-**4. Applied Examples** - Real before-and-after workflows showing the difference between default AI and configured AI.
+### Step 3 — The First 30 Days (daily, 15–30 minutes)
+Start [drills/01-first-30-days.md](drills/01-first-30-days.md). This is the centerpiece of the whole product. Structured daily practice, Monday through Friday for four weeks. Each day is a small assignment — most take 15 minutes, some take 30. You do not have to do them in the evenings; almost all of them fit inside a workday.
 
-## The Payoff
+**If you only do one thing from this repo, do the 30-day drill program.** Everything else is support.
 
-After setup, your AI will:
+### Step 4 — Real Workflows (as you need them)
+Once you've finished the drills and have a real deal or portfolio task in front of you, pull up the relevant walkthrough in [workflows/](workflows/). Each one is an end-to-end: start with a CIM and some notes, end with a presentable IC memo, or start with 12 compliance certs and end with a portfolio summary for your PM. These are not before/after examples. They're full sequences with exact prompts.
 
-- Write in your firm's voice, not generic corporate speak
-- Know your role, your seniority, and what decisions you actually make
-- Challenge your logic instead of just agreeing with you
-- Produce first drafts that need 20% editing instead of 80%
-- Remember your preferences across every conversation
+### Step 5 — The Play (week 3 onward)
+Read [play/01-why-youre-really-here.md](play/01-why-youre-really-here.md) when you start noticing you're getting faster. This is the part nobody else in the AI-training world will say out loud: how to turn being good at AI into visibility, bigger bonuses, and earlier promotions without sounding like a hype guy. Read it once early, then again a few weeks later when you have wins to document.
 
-## The Agents
+---
 
-Once you've finished setup, there are six pre-built specialists designed for specific finance and outreach workflows. Each one is a system prompt you copy and paste into a new conversation — they live in the agents folder linked below.
+## What's Inside
 
-- [IC Memo Drafter](agents/01-ic-memo-drafter.md) — Structures investment committee memos from raw deal notes and CIM extracts into presentable first drafts.
-- [Deal Screening Agent](agents/02-deal-screening-agent.md) — Filters incoming deal flow against your firm's criteria and tells you in 5 minutes if a deal is worth your time.
-- [Market Intelligence Agent](agents/03-market-intelligence-agent.md) — Builds competitive landscape and industry analysis for a specific sector in hours instead of weeks.
-- [Portfolio Monitoring Agent](agents/04-portfolio-monitoring-agent.md) — Synthesizes quarterly reporting and portfolio data into actionable risk flags and performance summaries.
-- [Outreach Agent](agents/05-outreach-agent.md) — Generates targeted outreach content tailored to the recipient's industry, role, and specific pain points.
-- [Orchestrator](agents/06-orchestrator.md) — Coordinates multi-step workflows across AI platforms when a task is too complex for a single conversation.
+- **[doctrine/](doctrine/)** — The Five Rules + Rule 6 (How You Actually Get Good). Mental model. Read once.
+- **[setup/](setup/)** — Getting configured + Copilot power moves (OneNote as context, Copilot Notebooks, Agent Builder, Excel/Outlook/Teams patterns).
+- **[examples/](examples/)** — Before and after. Shows you what "good output" looks like.
+- **[drills/](drills/)** — The 30-day structured practice program. Do this.
+- **[workflows/](workflows/)** — End-to-end walkthroughs of real private credit work.
+- **[play/](play/)** — Career positioning. How to make your AI competence visible at your firm.
+- **[agents/](agents/)** — Custom-built agents come in v2 as part of ongoing support. See the folder for what's coming.
 
-## Important Note on Excel, PowerPoint, and Other Tools
+---
 
-Yes - AI connects to Excel, PowerPoint, email, and everything else you use daily. But plugging AI into Excel without doing this setup first is like hiring an analyst who doesn't know your firm, your standards, or what a good model looks like. You'll spend more time fixing their output than doing it yourself.
+## Notes on Your Tool
 
-**Foundation first. Tools second. That's the sequence.**
+Most private credit firms are on **Microsoft 365 Copilot** because it's already paid for as part of the Microsoft bundle and because it can see your firm's SharePoint, OneDrive, Outlook, and Teams data inside the firm's security perimeter. That's a real advantage over Claude and ChatGPT for work materials, and this repo assumes Copilot is your default.
+
+If you're using **Claude** or **ChatGPT** for personal learning, for practice outside the firm's perimeter, or because your firm doesn't have Copilot yet, the drills and workflows are written to work with any of the three. When a step is specific to one tool, it's labeled.
+
+You do not need to know anything about GitHub, repos, or markdown files to use this. If any of those words are unfamiliar, ignore them. The "files" in this repo are just short documents you can read one at a time.
 
 ---
 
