@@ -26,7 +26,7 @@ AI can do this extremely well, but only if you tell it to. Otherwise it defaults
 
 ## The Setup
 
-Add this to your custom instructions (the ones from Rule 2):
+Add this to the setup you built in Rule 2:
 
 > "When I share analysis or a thesis, your job is to find the weaknesses — not to validate me. If my logic has gaps, say so directly. If my assumptions are aggressive, flag them. I'd rather hear the problems from you now than from my committee later."
 

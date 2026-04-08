@@ -2,7 +2,7 @@
 
 ## The Mistake Everyone Makes
 
-When most people open ChatGPT or Claude, they type a question:
+When most people open their AI, they type a question:
 
 > "What are the key risks in a leveraged buyout?"
 
