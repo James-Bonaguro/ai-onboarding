@@ -1,4 +1,4 @@
-# Rebuild Plan — The AI Operating System (Private Credit)
+# Rebuild Plan — Personalized AI Onboarding (Private Credit)
 
 ## Context
 

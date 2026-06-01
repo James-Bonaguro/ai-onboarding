@@ -1,4 +1,4 @@
-# The AI Operating System — Private Credit Edition
+# Personalized AI Onboarding — Private Credit Edition
 
 A field manual that teaches private credit professionals to use AI as a
 reasoning partner, not a search engine. Configure your tools in ~30 minutes,
