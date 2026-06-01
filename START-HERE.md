@@ -12,7 +12,7 @@ developer jargon, ignore it - it's not for you.
 
 ## What to click
 
-👉 **[https://ai-onboarding.vercel.app/](https://ai-onboarding.vercel.app/)**
+👉 **[https://ai-operating-system.vercel.app/](https://ai-operating-system.vercel.app/)**
 
 Open it on your laptop (it works on your phone too). It looks good in light or
 dark — there's a little sun/moon button in the top-right if you want to switch.

@@ -21,7 +21,7 @@ Once it's deployed to Vercel (one-time step below), the site lives at a clean
 link like:
 
 ```
-https://ai-onboarding.vercel.app/
+https://ai-operating-system.vercel.app/
 ```
 
 Text that URL to anyone. It works on phone and desktop, light and dark, and
@@ -34,7 +34,7 @@ Keep this repo **private**; publish the site through Vercel:
 1. In Vercel → **Add New → Project → Import Git Repository** → pick
    `James-Bonaguro/ai-onboarding`.
 2. Framework Preset: **Other**. Leave Build/Output empty (it's static). **Deploy**.
-3. Done — you get `https://ai-onboarding.vercel.app` (its own project, separate
+3. Done — you get `https://ai-operating-system.vercel.app` (its own project, separate
    from intersectionstrategies). `vercel.json` already serves `/docs`, so the
    homepage is the site, not this README.
 
