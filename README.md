@@ -17,26 +17,29 @@ You read it by clicking one link — no GitHub, no markdown, no developer toolin
 
 ## Records for myself (Ignore) --- The link to share
 
-Once GitHub Pages is enabled (one-time step below), the site lives at:
+Once it's deployed to Vercel (one-time step below), the site lives at a clean
+link like:
 
 ```
-https://james-bonaguro.github.io/ai-onboarding/
+https://ai-onboarding.vercel.app/
 ```
 
 Text that URL to anyone. It works on phone and desktop, light and dark, and
 even offline if they save the page.
 
-### One-time setup (repo owner, ~30 seconds)
+### One-time setup (repo owner, ~2 minutes)
 
-GitHub Pages just needs to be switched on once:
+Keep this repo **private**; publish the site through Vercel:
 
-1. Go to the repo on GitHub → **Settings** → **Pages**.
-2. Under **Build and deployment → Source**, choose **GitHub Actions**.
-3. Done. Every push to `main` now publishes automatically via
-   [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml).
+1. In Vercel → **Add New → Project → Import Git Repository** → pick
+   `James-Bonaguro/ai-onboarding`.
+2. Framework Preset: **Other**. Leave Build/Output empty (it's static). **Deploy**.
+3. Done — you get `https://ai-onboarding.vercel.app` (its own project, separate
+   from intersectionstrategies). `vercel.json` already serves `/docs`, so the
+   homepage is the site, not this README.
 
-The first deploy runs in ~1 minute; the live URL appears at the top of the
-**Pages** settings page and on the workflow run.
+To take down the old GitHub Pages page: make the repo **private** (Settings →
+General → Change visibility) or set **Settings → Pages → Source → None**.
 
 ---
 

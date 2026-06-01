@@ -14,10 +14,10 @@ markdown file.
   fully responsive (desktop + phone), with light/dark themes. Built as plain
   HTML/CSS/JS with **no build step, no dependencies, and no web fonts**, so it
   loads instantly and works offline if saved.
-- **One clickable link**, deployed via GitHub Pages
-  ([`deploy-pages.yml`](.github/workflows/deploy-pages.yml)). The owner flips one
-  setting once; every push publishes automatically. Nobody else ever touches
-  GitHub.
+- **One clickable link**, published through **Vercel** with the repo kept
+  **private** (`vercel.json` serves `/docs`; `.vercelignore` keeps the markdown
+  source and owner notes out of the deploy). Every push redeploys automatically;
+  the reader never touches GitHub.
 - **Premium editorial design** for finance professionals: system serif display
   + system sans body, hairline rules, real whitespace, a restrained navy/brass
   palette — and zero AI-gradient clichés.
