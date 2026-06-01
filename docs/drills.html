@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The First 30 Days — The AI Operating System</title>
+<meta name="description" content="Twenty drills, weekdays for four weeks. Fifteen minutes each, done at your desk on real private credit deals. The centerpiece of the program — with progress tracking.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%231E3A5F'/%3E%3Cpath%20d='M16%207%2023%2022%209%2022Z'%20fill='none'%20stroke='%23CBA85C'%20stroke-width='2.2'%20stroke-linejoin='round'/%3E%3Ccircle%20cx='16'%20cy='17.6'%20r='2.1'%20fill='%23CBA85C'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/app.css">
+<script>(function(){try{var t=localStorage.getItem('aios-theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body>
+<div class="progressbar"></div>
+
+<header class="nav">
+  <div class="shell nav-inner">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1E3A5F"/><path d="M16 7 23 22 9 22Z" fill="none" stroke="#CBA85C" stroke-width="2.2" stroke-linejoin="round"/><circle cx="16" cy="17.6" r="2.1" fill="#CBA85C"/></svg>
+      <span>AI Operating System<small>Private Credit</small></span>
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="rules.html">The Rules</a>
+      <a href="setup.html">Setup</a>
+      <a href="prompts.html">Prompts</a>
+      <a href="examples.html">Examples</a>
+      <a href="drills.html">30 Days</a>
+      <a href="workflows.html">Workflows</a>
+      <a href="play.html">The Play</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="icon-btn theme-toggle" aria-label="Toggle dark mode" title="Toggle light / dark">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 7 7 0 1 0 20 14.5z"/></svg>
+      </button>
+      <button class="icon-btn nav-burger" aria-label="Open menu" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:1rem">
+    <div class="shell">
+      <span class="eyebrow">The centerpiece · 15 min a day</span>
+      <h1>The first 30 days</h1>
+      <p class="lead">Twenty drills, Monday through Friday for four weeks. Most take fifteen minutes; a few take thirty. None of them require you to stay late — they’re reps you do in the cracks between meetings, on real deals you’re already working. <strong>If you do one thing from this whole program, do this.</strong></p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1.5rem">
+    <div class="shell">
+
+      <div class="grid grid-2" style="margin-bottom:2rem">
+        <div class="card"><h3>How to use this</h3><ul class="prose"><li><strong>In order.</strong> Each week builds on the last. Skip Week 1 and you’ll produce bad work in Week 3 and blame the AI.</li><li><strong>At your desk, on real materials.</strong> Not homework — reps on live deals.</li><li><strong>One a day.</strong> The point is reps spread across days, not a Saturday binge.</li></ul></div>
+        <div class="card"><h3>Keep a drill log</h3><p>Open a OneNote page (or a Word doc) called <em>AI Drill Log</em>. After each drill, write two lines: what you tried, and what surprised you. By day 30 you’ll have a personal handbook of what works for <em>your</em> thinking on <em>your</em> deals — more valuable than the drills themselves.</p><p class="muted" style="font-size:.9rem">Use Copilot for firm materials. Use Claude/ChatGPT only for things your firm has cleared for outside tools.</p></div>
+      </div>
+
+      <!-- PROGRESS PANEL -->
+      <div class="progress-panel">
+        <div class="progress-top">
+          <b>Your progress</b>
+          <span id="drill-count" class="muted">0 of 20 done</span>
+          <button class="btn-tiny" id="drill-reset" type="button">Reset</button>
+        </div>
+        <div class="progress-track"><div class="progress-fill" id="drill-fill"></div></div>
+        <p class="muted" style="font-size:.84rem; margin-top:.6rem">Tick a box as you finish. Progress is saved in this browser on this device — no account, nothing leaves your machine.</p>
+      </div>
+
+      <!-- WEEK 1 -->
+      <div class="week">
+        <div class="week-head"><span class="wk">Week 1</span><span class="wk-theme">Context &amp; specificity — learning how much context the AI needs, and giving it without thinking.</span></div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d1" aria-label="Mark Day 1 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 1</span> The two-prompt test <span class="pill time">15 min</span></div>
+            <p>Pick a topic from a live deal. Ask it two ways, in two separate chats: a <strong>generic</strong> version (<span class="ex">“What should I look for in a sponsor’s revenue growth assumptions?”</span>) and a <strong>specific</strong> one (<span class="ex">“B2B SaaS, 32% historical CAGR, sponsor projects 28% for five years, 18 customers = 70% of revenue. Tell me the three most aggressive things about that projection and what to ask in management meetings to test them.”</span>)</p>
+            <p>Read both back-to-back. In your log: what was the generic version missing? This is the entire game in one drill — get used to feeling the difference.</p>
+          </div>
+        </div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d2" aria-label="Mark Day 2 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 2</span> Context block in front <span class="pill time">15 min</span></div>
+            <p>Open a new chat. Paste your “About me” block (from <a href="setup.html">setup</a>) at the top even if your settings are already configured, then ask a real question from your day. Notice the system warm up to your role.</p>
+            <p>On Copilot with a OneNote context notebook? Today, add your firm’s investment criteria and your PM’s known preferences to it, then ask Copilot to use them on a real question.</p>
+          </div>
+        </div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d3" aria-label="Mark Day 3 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 3</span> “Pretend I’m your new analyst” <span class="pill time">20 min</span></div>
+            <p>Pick something you actually need to understand better — a sub-sector, a covenant structure, a PIK toggle. Start with: <span class="ex">“Pretend I’m a new analyst and you’re walking me through this for the first time. I want to actually understand it, not just the definition. Use a real market example.”</span></p>
+            <p>Push back on anything glossed over: <span class="ex">“Slow down — explain that part again.”</span> The single best way to learn anything new in private credit.</p>
+          </div>
+        </div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d4" aria-label="Mark Day 4 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 4</span> The pushback drill <span class="pill time">15 min</span></div>
+            <p>Paste a working thesis on a current deal, then: <span class="ex">“Find the three weakest parts of this thesis. Don’t be polite. Tell me what a skeptical IC member would say first.”</span> At least one will be something you hadn’t considered. Update your thesis; save it in your log.</p>
+          </div>
+        </div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d5" aria-label="Mark Day 5 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 5</span> Voice mode <span class="pill time">20 min</span> <span class="pill tool">walk</span></div>
+            <p>Headphones in. Open voice mode. Go for a fifteen-minute walk and talk through a deal you’re confused about, a presentation you owe, or a meeting you didn’t follow. Don’t try to be articulate — just talk. When you’re done: <span class="ex">“Organize what I just said into a clear structure.”</span></p>
+            <p>Most analysts skip this. It feels weird the first time. By the third it’s the most useful tool in the kit.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- WEEK 2 -->
+      <div class="week">
+        <div class="week-head"><span class="wk">Week 2</span><span class="wk-theme">Documents &amp; models — feeding real materials in and getting useful work back.</span></div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d6" aria-label="Mark Day 6 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 6</span> Your first CIM pass <span class="pill time">30 min</span></div>
+            <p>Upload a live CIM. Run this sequence: (1) <span class="ex">“The sponsor’s actual growth thesis in five bullets — the underlying claim, not the marketing.”</span> (2) <span class="ex">“Every quantitative market claim, with page number, and which look softest.”</span> (3) <span class="ex">“Every EBITDA adjustment — amount, rationale, and whether it survives committee.”</span> (4) <span class="ex">“What’s not in this document that should be?”</span></p>
+            <p>That last question is the most important. CIMs are sales documents; the interesting story is what’s missing. On Copilot, do this inside a deal Notebook so the context carries forward.</p>
+          </div>
+        </div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d7" aria-label="Mark Day 7 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 7</span> Walk me through this model <span class="pill time">30 min</span> <span class="pill tool">Excel Copilot</span></div>
+            <p>Open a model, click the Copilot button, run: (1) <span class="ex">“Walk me through this — structure, tabs, and the three or four assumptions that drive everything.”</span> (2) <span class="ex">“Base-case revenue growth — where is it set and where does the number come from?”</span> (3) <span class="ex">“Drop EBITDA margins 200bps in years 2–5; what happens to leverage and DSCR each year?”</span> (4) <span class="ex">“The one slide you’d put at the front for committee — draft it.”</span></p>
+            <p>Not on Copilot? Paste a simplified version of the assumptions into Claude/ChatGPT and run the same logic in text.</p>
+          </div>
+        </div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d8" aria-label="Mark Day 8 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 8</span> Three sentences <span class="pill time">15 min</span></div>
+            <p>Paste any email or memo you wrote last week: <span class="ex">“Cut this to three sentences for an IC member with 30 seconds. Don’t lose the recommendation or key risk.”</span> Decide if it’s better than yours. Then flip it: write a one-line recommendation and have it expand into a full paragraph with supporting logic. You’ve now practiced both directions.</p>
+          </div>
+        </div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d9" aria-label="Mark Day 9 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 9</span> Covenant reading <span class="pill time">20 min</span></div>
+            <p>Paste the financial covenant section from a deal you can use: (1) <span class="ex">“Translate this into plain English — what must the borrower do, and what happens if they don’t?”</span> (2) <span class="ex">“What’s borrower-friendly and what’s lender-friendly?”</span> (3) <span class="ex">“Compare to standard market terms for a sponsor-backed unitranche of similar size — loose where, tight where?”</span></p>
+            <p>The goal isn’t to replace your reading. It’s to be faster and catch what you’d skim past.</p>
+          </div>
+        </div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d10" aria-label="Mark Day 10 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 10</span> Customer concentration hunt <span class="pill time">20 min</span></div>
+            <p>Pick a deal with non-trivial concentration. Pull everything — CIM, model, management deck, call notes — and ask: <span class="ex">“Find every claim about customer concentration. Where do the documents agree and where do they contradict? What’s the strongest case the sponsor makes that it’s okay, versus the strongest case I’d make in committee that it isn’t?”</span></p>
+            <p>A synthesis drill — the afternoon’s work that now takes ten minutes.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- WEEK 3 -->
+      <div class="week">
+        <div class="week-head"><span class="wk">Week 3</span><span class="wk-theme">Synthesis &amp; steering — pushing past the first answer. Most people stop when it’s usable; you keep going.</span></div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d11" aria-label="Mark Day 11 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 11</span> Worse, then better <span class="pill time">20 min</span></div>
+            <p>Paste a draft you’ve written: <span class="ex">“Make this worse — like a junior analyst trying too hard. Then make it better — sharper, more direct, less hedged. Show me both.”</span> The “worse” version surfaces bad habits you didn’t know you had; the “better” gives you a stretch version of your own voice.</p>
+          </div>
+        </div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d12" aria-label="Mark Day 12 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 12</span> Build your own lightweight agent <span class="pill time">30 min</span></div>
+            <p>Not Agent Builder yet — the rehearsal. Write a <em>Deal Screener</em> context block: your firm’s actual investment criteria (sectors, EBITDA size, leverage, hold, geography), the three things your firm cares about most, the two immediate disqualifiers, and the output format you want.</p>
+            <p>Save it. Paste it atop a new chat and feed in the next teaser that lands. You just built a v0 agent — and the spec for your future real one.</p>
+          </div>
+        </div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d13" aria-label="Mark Day 13 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 13</span> IC memo first draft <span class="pill time">30 min</span></div>
+            <p>Take the deal you’re closest to writing up. Give the AI everything — notes, CIM extracts, model output, thesis — then: <span class="ex">“Draft a first-pass IC memo: (1) deal in two sentences, (2) why we like it in three bullets, (3) three biggest risks with how we get comfortable, (4) what we’d ask management next, (5) recommendation. Direct tone, no marketing language, no hedging.”</span></p>
+            <p>It’ll be 60% there — four hours saved. Edit the rest yourself. What you fix is where your judgment lives, and where your real value is.</p>
+          </div>
+        </div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d14" aria-label="Mark Day 14 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 14</span> The adversarial reader <span class="pill time">20 min</span></div>
+            <p>Paste any work product: <span class="ex">“Read this as the most skeptical PM at my firm — 25 years in, has seen every flavor of bad deal. What three questions will they ask that I haven’t answered?”</span> Add the answers to your draft. You just ran your own pre-IC dry run.</p>
+          </div>
+        </div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d15" aria-label="Mark Day 15 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 15</span> Portfolio monitoring pass <span class="pill time">30 min</span></div>
+            <p>Pick a portfolio company. Pull the latest compliance cert, quarterly financials, and recent notes. Ask: (1) <span class="ex">“Summarize the quarter in five bullets — trajectory, watch-list item, what changed.”</span> (2) <span class="ex">“Compare to the original thesis — ahead where, behind where?”</span> (3) <span class="ex">“Draft a two-paragraph update for my PM. Direct, no padding. Flag the one thing they should care about most.”</span></p>
+            <p>One of the highest-leverage uses of AI in private credit.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- WEEK 4 -->
+      <div class="week">
+        <div class="week-head"><span class="wk">Week 4</span><span class="wk-theme">Integration — weaving AI into your actual workflow so it stops being a separate thing you go to.</span></div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d16" aria-label="Mark Day 16 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 16</span> The morning catch-up <span class="pill time">15 min</span></div>
+            <p>Before anything else: <span class="ex">“Summarize everything that came in overnight. Group by deal and portfolio company. Flag anything that needs a response from me today.”</span> Then in Teams: <span class="ex">“What did I miss in meetings yesterday that affects something I’m working on?”</span> Do it three days running; by day three you’ll wonder how you started without it.</p>
+          </div>
+        </div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d17" aria-label="Mark Day 17 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 17</span> The pre-meeting prep <span class="pill time">20 min</span></div>
+            <p>Pick a meeting tomorrow. Paste the subject, the 3–5 docs that’ll be referenced, and your role, then: <span class="ex">“Build me a one-page prep doc: the four things I should know walking in, the three questions I should be ready for, and the one question I should ask that nobody else will.”</span> Print it. Bring it. See how it feels.</p>
+          </div>
+        </div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d18" aria-label="Mark Day 18 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 18</span> The industry primer <span class="pill time">30 min</span></div>
+            <p>Pick a sector you might cover next quarter: <span class="ex">“Build me a primer: industry structure, the three or four large players, typical unit economics, how recessions hit it, what private credit lenders worry about, and the questions I should always ask management here.”</span> Then drill into the part that surprised you most with three follow-ups. Save it — the prep is done before the deal lands.</p>
+          </div>
+        </div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d19" aria-label="Mark Day 19 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 19</span> The sticky problem <span class="pill time">30 min</span> <span class="pill tool">walk</span></div>
+            <p>There’s a problem you’ve been avoiding — a deal you can’t decide, a memo you can’t start. Headphones, twenty-minute walk, voice mode: <span class="ex">“I’m going to ramble for ten minutes. Don’t interrupt — just let me talk. Then pull out the three things I’m actually worried about, what I think I should do, and the thing I’m avoiding. Be honest.”</span></p>
+            <p>This drill resolves a real problem in real time. Not metaphorically. Actually.</p>
+          </div>
+        </div>
+
+        <div class="drill"><input class="drill-check" type="checkbox" data-drill="d20" aria-label="Mark Day 20 complete">
+          <div class="drill-body"><div class="drill-title"><span class="day">Day 20</span> The look-back <span class="pill time">30 min</span></div>
+            <p>Open your drill log and paste the whole thing in: <span class="ex">“Read all of this. What patterns do you see in how I work and where I struggle? Where am I getting better, where am I still doing generic moves, and what one habit should I build over the next 30 days?”</span> Read it carefully. Argue with it. Update your habits.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- AFTER -->
+      <div class="section-head" style="margin-top:3rem">
+        <span class="eyebrow">After the 30 days</span>
+        <h2>You’re not done — you’re started</h2>
+      </div>
+      <div class="prose stack">
+        <p>The drills are scaffolding. The point of scaffolding is that by the end you don’t need it. What should be different:</p>
+      </div>
+      <ul class="prose">
+        <li>You stop thinking about “prompts.” You just talk to the thing.</li>
+        <li>You open Copilot in moments where last month you’d have struggled alone for an hour.</li>
+        <li>You draft an IC memo in 30 minutes instead of three hours — and it’s not noticeably worse.</li>
+        <li>The people around you start asking how you got faster.</li>
+      </ul>
+      <p class="prose">That last one is the bridge to <a href="play.html">The Play</a>. When colleagues start asking, you’ve stopped being someone who uses AI and become the person at your firm who knows how. Pull up the <a href="workflows.html">workflows</a> when you have a real deal in front of you. Until then, repeat any drill that didn’t click. Reps matter more than novelty.</p>
+
+      <div class="callout today">
+        <div class="callout-h"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>Do this today</div>
+        <p>Start your drill log right now — one page, titled “AI Drill Log” — and do Day 1. Fifteen minutes. Tick the box above when you’re done. That’s the program, started.</p>
+      </div>
+
+      <div class="pager">
+        <a href="examples.html"><span class="dir">← Back</span><span class="ttl">Before &amp; after</span></a>
+        <a class="next" href="workflows.html"><span class="dir">Next →</span><span class="ttl">Real workflows</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="shell footer-inner">
+    <div><strong style="color:var(--ink)">The AI Operating System</strong> — Private Credit Edition<br><span class="muted">Use AI as a reasoning partner, not a search engine.</span></div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="rules.html">Rules</a><a href="setup.html">Setup</a><a href="prompts.html">Prompts</a><a href="examples.html">Examples</a><a href="drills.html">30 Days</a><a href="workflows.html">Workflows</a><a href="play.html">The Play</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
