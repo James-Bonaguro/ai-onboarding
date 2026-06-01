@@ -1,5 +1,5 @@
 /* =========================================================================
-   The AI Operating System — behavior. Classic script (file:// safe), no deps.
+   Personalized AI Onboarding — behavior. Classic script (file:// safe), no deps.
    Progressive enhancement: the site is fully readable if this never runs.
    ========================================================================= */
 (function () {
