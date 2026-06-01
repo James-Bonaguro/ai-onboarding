@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Configured — The AI Operating System</title>
+<meta name="description" content="Exact, current steps to configure Microsoft Copilot, ChatGPT, and Claude for private credit work — custom instructions, memory, and Copilot power moves. Includes a ready-to-paste operating profile.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%231E3A5F'/%3E%3Cpath%20d='M16%207%2023%2022%209%2022Z'%20fill='none'%20stroke='%23CBA85C'%20stroke-width='2.2'%20stroke-linejoin='round'/%3E%3Ccircle%20cx='16'%20cy='17.6'%20r='2.1'%20fill='%23CBA85C'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/app.css">
+<script>(function(){try{var t=localStorage.getItem('aios-theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body>
+<div class="progressbar"></div>
+
+<header class="nav">
+  <div class="shell nav-inner">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1E3A5F"/><path d="M16 7 23 22 9 22Z" fill="none" stroke="#CBA85C" stroke-width="2.2" stroke-linejoin="round"/><circle cx="16" cy="17.6" r="2.1" fill="#CBA85C"/></svg>
+      <span>AI Operating System<small>Private Credit</small></span>
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="rules.html">The Rules</a>
+      <a href="setup.html">Setup</a>
+      <a href="prompts.html">Prompts</a>
+      <a href="examples.html">Examples</a>
+      <a href="drills.html">30 Days</a>
+      <a href="workflows.html">Workflows</a>
+      <a href="play.html">The Play</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="icon-btn theme-toggle" aria-label="Toggle dark mode" title="Toggle light / dark">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 7 7 0 1 0 20 14.5z"/></svg>
+      </button>
+      <button class="icon-btn nav-burger" aria-label="Open menu" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:1rem">
+    <div class="shell">
+      <span class="eyebrow">One-time setup · ~15 minutes</span>
+      <h1>Get configured</h1>
+      <p class="lead">You’re going to paste a few paragraphs into your AI’s settings. That text runs quietly behind every conversation — it tells the AI who you are, what you do, and how you work. After this, every answer you get is sharper. Do it once. Benefit forever.</p>
+      <nav class="subnav" aria-label="On this page">
+        <a href="#profile">1 · Your operating profile</a>
+        <a href="#install">2 · Where to paste it</a>
+        <a href="#test">3 · Test it</a>
+        <a href="#copilot">Copilot power moves</a>
+        <a href="#safety">Safety</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- PROFILE -->
+  <section class="section" id="profile">
+    <div class="shell">
+      <div class="section-head">
+        <span class="eyebrow">Step 1</span>
+        <h2>Your operating profile</h2>
+        <p>Two blocks. The first tells the AI who you are. The second tells it how to talk to you — including the all-important “push back, don’t flatter.” They’re already written for a private credit professional. Copy them, then edit the few <strong>[bracketed]</strong> bits to fit you.</p>
+      </div>
+
+      <div class="prompt-card">
+        <div class="prompt-head">
+          <div class="pt"><h3>Block A — About me</h3><p>Goes in the “what should the AI know about you” box.</p></div>
+          <button class="copy-btn" aria-label="Copy block A"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+        </div>
+        <div class="prompt-body">I'm a [VP / AVP] at a private credit fund. We provide directly originated senior debt — unitranche, first lien, and second lien — to sponsor-backed mid-market companies (roughly $10M–$75M EBITDA).
+
+My day-to-day: screening new deals from teasers and CIMs, reading credit agreements and covenant packages, building and stress-testing financial models, writing investment committee (IC) memos, running management diligence calls, and monitoring portfolio companies (compliance certificates, quarterly financials, watch-list items). I also draft LP and internal communications.
+
+Who I write for: my investment committee and senior PMs. They're smart, skeptical, and time-poor. They care most about downside protection, the durability of cash flow and debt-service coverage, the quality of EBITDA (especially add-backs), covenant protection, and what breaks the thesis. They have no patience for marketing language.
+
+How I think about the work: direct, analytical, evidence-led. I'd rather see the risk flagged than the deal cheered. I value specifics — numbers, named assumptions, page references — over generalities.
+
+Formats I use most: one- to three-page IC memos, risk summaries, comparison tables, diligence question lists, redline notes on credit agreements, and concise emails.
+
+What I do NOT want: generic answers that could apply to any company; corporate buzzwords; hedging filler; long preambles. If you don't have enough to be useful, tell me what's missing instead of guessing.</div>
+      </div>
+
+      <div class="prompt-card">
+        <div class="prompt-head">
+          <div class="pt"><h3>Block B — How to respond</h3><p>Goes in the “how should the AI respond” box. This is where you make it fight you.</p></div>
+          <button class="copy-btn" aria-label="Copy block B"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+        </div>
+        <div class="prompt-body">Be direct. No preamble, no "Great question," no filler. Lead with the answer.
+
+When I share analysis or a thesis, find the weaknesses first. Don't validate me — challenge me. Tell me what the most skeptical PM at my firm would push on. I'd rather hear the problems from you than from my committee.
+
+Match my firm's tone: direct, analytical, minimal hedging, no marketing language. Avoid words like "potentially," "robust," "compelling," and "differentiated."
+
+Be specific. Use numbers, named assumptions, and document or page references. If I share a long document, read all of it before responding — don't summarize the first two pages and stop. Flag any number you're inferring rather than reading directly.
+
+When you don't have enough information to be useful, ask me what's missing instead of guessing.
+
+Keep responses concise unless I ask for depth. If I want more, I'll ask.</div>
+      </div>
+
+      <div class="callout note">
+        <div class="callout-h"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>Tip</div>
+        <p>The single highest-value edit: replace the generic “skeptical PM” line with what your <em>actual</em> PM flags every time — “always asks about customer concentration,” “hates working-capital surprises,” whatever it is. The more real it is, the better the output.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALL -->
+  <section class="section" id="install">
+    <div class="shell">
+      <div class="section-head">
+        <span class="eyebrow">Step 2</span>
+        <h2>Where to paste it</h2>
+        <p>Pick your tool. The steps are current as of mid-2026. These products move their menus around — if a label has moved, look for <strong>Settings → Personalization</strong> (or <strong>Profile</strong>) and you’ll find it.</p>
+      </div>
+
+      <div class="tabs" data-tabs="setup-tool">
+        <div class="tablist" role="tablist" aria-label="Choose your tool">
+          <button class="tab-btn" role="tab" data-tab="copilot" id="tab-copilot">Microsoft Copilot</button>
+          <button class="tab-btn" role="tab" data-tab="chatgpt" id="tab-chatgpt">ChatGPT</button>
+          <button class="tab-btn" role="tab" data-tab="claude" id="tab-claude">Claude</button>
+        </div>
+
+        <!-- COPILOT -->
+        <div class="tab-panel" role="tabpanel" data-panel="copilot" aria-labelledby="tab-copilot">
+          <p class="prose">This is the one your firm pays for, and it now does what the others do. In early 2026 Microsoft added native <strong>Custom Instructions</strong> and <strong>Memory</strong> to Microsoft 365 Copilot — so the old “enterprise Copilot won’t let you save preferences” problem is largely gone. (Some tenants finished rolling this out through spring 2026; if you don’t see it yet, use the OneNote method in the power moves below in the meantime.)</p>
+          <ol class="steps">
+            <li><strong>Open Copilot with your work account.</strong> The Microsoft 365 Copilot app, <span class="nowrap">copilot.microsoft.com</span>, or the Copilot app inside Teams — any of them, signed in with your firm email.</li>
+            <li><strong>Open settings.</strong> Click your profile picture or the gear icon (top right), then look for <strong>Personalization</strong> or <strong>Memory and personalization</strong>.</li>
+            <li><strong>Find Custom instructions.</strong> Paste <em>Block A</em> and <em>Block B</em> together into the custom instructions field. (Copilot uses one box — paste A, then a blank line, then B.)</li>
+            <li><strong>Turn Memory on.</strong> In the same area, enable Memory so Copilot remembers your preferences and recurring deals over time. You can review and delete anything it remembers here.</li>
+            <li><strong>Save.</strong> That’s it — it now applies to every new chat.</li>
+          </ol>
+          <div class="callout note"><div class="callout-h"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>If you don’t see it</div><p>Memory and custom instructions are controlled by an admin setting (“enhanced personalization,” on by default). If the option is missing entirely, your IT team has it switched off — ask them to enable it for your account. Until then, the OneNote method below gives you the same persistent context.</p></div>
+        </div>
+
+        <!-- CHATGPT -->
+        <div class="tab-panel" role="tabpanel" data-panel="chatgpt" aria-labelledby="tab-chatgpt" hidden>
+          <p class="prose">Use ChatGPT for personal learning and practice (not for confidential firm materials — see <a href="#safety">Safety</a>). Setup takes two minutes.</p>
+          <ol class="steps">
+            <li><strong>Open Settings.</strong> Click your name or initials (bottom-left on the web app), then <strong>Settings</strong>.</li>
+            <li><strong>Go to Personalization → Custom Instructions.</strong> Make sure the toggle is on.</li>
+            <li><strong>Fill the two boxes.</strong> Paste <em>Block A</em> into “What would you like ChatGPT to know about you?” and <em>Block B</em> into “How would you like ChatGPT to respond?” Each box holds up to ~1,500 characters; the blocks fit comfortably.</li>
+            <li><strong>Turn on Memory.</strong> Still under <strong>Personalization → Memory</strong>, enable “Reference saved memories” so it builds on what you tell it over time. Use a <em>Temporary Chat</em> for anything you don’t want remembered.</li>
+            <li><strong>Save.</strong> Settings apply immediately, even to open conversations.</li>
+          </ol>
+          <div class="callout note"><div class="callout-h"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg>Optional</div><p>ChatGPT also has personality presets (Default, Professional, Efficient, Candid…). “Professional” or “Candid” pairs well with your profile, but the custom instructions matter far more.</p></div>
+        </div>
+
+        <!-- CLAUDE -->
+        <div class="tab-panel" role="tabpanel" data-panel="claude" aria-labelledby="tab-claude" hidden>
+          <p class="prose">Claude is excellent at long documents and careful reasoning — good for personal practice and learning. Same caution on confidential materials applies (see <a href="#safety">Safety</a>).</p>
+          <ol class="steps">
+            <li><strong>Open Settings.</strong> Click your initials (bottom-left), then <strong>Settings</strong>.</li>
+            <li><strong>Go to Profile.</strong> Find the field labelled something like “What personal preferences should Claude consider in its responses?”</li>
+            <li><strong>Paste both blocks.</strong> Put <em>Block A</em> and <em>Block B</em> together in that field. Keep the total tight (aim under ~500 words) — every line loads with every message, so trim anything that doesn’t apply to you.</li>
+            <li><strong>Save.</strong> It now applies to every conversation.</li>
+          </ol>
+          <div class="callout key"><div class="callout-h"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4-9 4z"/><path d="M3 7v6l9 4 9-4V7"/></svg>Go further: Projects</div><p>For a specific deal or sector, create a <strong>Project</strong> (left sidebar → Projects → New project). Give it its own instructions and upload the relevant documents to its knowledge. Every chat inside that project inherits the context — it’s the closest thing Claude has to a Copilot Notebook. Free accounts get up to five.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEST -->
+  <section class="section" id="test">
+    <div class="shell">
+      <div class="section-head">
+        <span class="eyebrow">Step 3</span>
+        <h2>Test it — 60 seconds</h2>
+      </div>
+      <p class="prose">Open a new conversation and type something simple:</p>
+      <div class="chat" style="max-width:var(--measure)">
+        <div class="bubble you"><div class="who">You</div><p>“I need to write a quick summary of a deal I’m reviewing. Mid-market B2B software, PE-backed, 5x levered. Where should I start?”</p></div>
+      </div>
+      <div class="grid grid-2" style="margin-top:1.2rem">
+        <div class="card" style="border-left:4px solid var(--good)"><h3 style="color:var(--good)">It worked</h3><p>The reply references your role, your firm’s standards, and your typical output format. It sounds like it knows you — and it probably pushes back or asks what’s missing.</p></div>
+        <div class="card" style="border-left:4px solid var(--warn)"><h3 style="color:var(--warn)">Not yet</h3><p>The reply is generic and could be written for anyone. Go back and confirm your instructions actually saved, and that the customization toggle is on.</p></div>
+      </div>
+      <div class="callout today">
+        <div class="callout-h"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>Do this today</div>
+        <p>Configure one tool right now — Copilot if your firm has it — and run the test above. Then head to the <a href="prompts.html">prompt library</a>, copy the “Summarize a CIM for credit review” prompt, and point it at a real deal. That’s your first win, in under 30 minutes total.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COPILOT POWER MOVES -->
+  <section class="section" id="copilot">
+    <div class="shell">
+      <div class="section-head">
+        <span class="eyebrow">For Microsoft 365 firms</span>
+        <h2>Copilot power moves</h2>
+        <p>When colleagues say “Copilot isn’t as good as ChatGPT,” they’re judging the chat window — the weakest part. The real leverage is Copilot wired into the apps you already live in, inside your firm’s security perimeter. Here’s what to actually open.</p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>1 · Copilot Notebooks</h3>
+          <p>A workspace where you add a deal’s materials — CIM, model, management deck, research, call notes — and Copilot reasons across <em>all of them at once</em>. One notebook per deal. It’s the enterprise answer to a research synthesizer, and it lives inside your data perimeter, so confidential materials are fine.</p>
+          <p class="muted" style="font-size:.9rem">Now generally available on Copilot (E3/E5/Business Standard &amp; Premium with a Copilot license). Ask it: “Pull every mention of customer concentration across these documents and tell me where they contradict each other.” Then generate the audio overview and listen on your commute before IC.</p>
+        </div>
+        <div class="card">
+          <h3>2 · Copilot in Excel</h3>
+          <p>Copilot embedded in the open model, cell by cell. Click the Copilot button in the ribbon and ask it to walk you through the model, find the assumptions that drive everything, and stress it.</p>
+          <p class="muted" style="font-size:.9rem">“Stress this model: drop revenue 300bps in years 2–5 and tell me what happens to the leverage covenant each year. Build a new tab.” An hour of work in four minutes — and it doesn’t get tired reading every cell.</p>
+        </div>
+        <div class="card">
+          <h3>3 · Copilot in Outlook &amp; Teams</h3>
+          <p>The “boring” integrations that quietly save you hours. Summarize a 40-message thread in three sentences. Draft replies in your voice. Get real-time meeting notes and decisions in Teams so you’re thinking, not transcribing.</p>
+          <p class="muted" style="font-size:.9rem">You spend three to five hours a day here. Cutting 20% of it is a real differentiator nobody talks about.</p>
+        </div>
+        <div class="card">
+          <h3>4 · OneNote / SharePoint as context</h3>
+          <p>Copilot can read your OneNote and SharePoint. Keep a notebook — “Firm Playbook” — with sections for your role, firm standards, current deals, and portfolio companies. Copilot references it automatically, no re-pasting.</p>
+          <p class="muted" style="font-size:.9rem">This is the fallback if your tenant hasn’t enabled custom instructions yet — and it’s useful regardless.</p>
+        </div>
+      </div>
+
+      <div class="callout warn">
+        <div class="callout-h"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>Don’t build a custom agent yet</div>
+        <p>Copilot’s Agent Builder lets you create persistent specialists (a Deal Screener, an IC Memo Drafter) in plain English. It’s powerful — and you’ll do it badly on day one. Build the instinct through the <a href="drills.html">30-day drills</a> first. For now, just keep a short list of the agents you’d want. (Real, firm-specific agents are the v2 retainer deliverable.)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAFETY -->
+  <section class="section" id="safety">
+    <div class="shell">
+      <div class="section-head">
+        <span class="eyebrow">Read this once</span>
+        <h2>Keep it safe</h2>
+      </div>
+      <div class="prose stack">
+        <p><strong>Use Copilot for work materials.</strong> It’s cleared by your firm’s IT and operates inside your security perimeter — that’s the whole reason your firm bought it. CIMs, models, credit agreements, portfolio data: keep them in Copilot.</p>
+        <p><strong>Use ChatGPT and Claude for learning and practice.</strong> They’re excellent teachers and thinking partners. But don’t paste anything into them you wouldn’t send in an unencrypted email. A good rule: if it has a company name, a sponsor, or real numbers on it, it stays in Copilot.</p>
+        <p><strong>When in doubt, ask your compliance team what’s approved.</strong> Policies vary by firm. Two minutes of asking beats an awkward conversation later.</p>
+      </div>
+
+      <div class="pager">
+        <a href="rules.html"><span class="dir">← Back</span><span class="ttl">The five rules</span></a>
+        <a class="next" href="examples.html"><span class="dir">Next →</span><span class="ttl">See before &amp; after</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="shell footer-inner">
+    <div><strong style="color:var(--ink)">The AI Operating System</strong> — Private Credit Edition<br><span class="muted">Use AI as a reasoning partner, not a search engine.</span></div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="rules.html">Rules</a><a href="setup.html">Setup</a><a href="prompts.html">Prompts</a><a href="examples.html">Examples</a><a href="drills.html">30 Days</a><a href="workflows.html">Workflows</a><a href="play.html">The Play</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

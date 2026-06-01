@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prompt Library — The AI Operating System</title>
+<meta name="description" content="Copy-paste AI prompts built for private credit work: deal screening, CIM and covenant analysis, model stress tests, comparison tables, diligence lists, IC memos, redlines, email, and portfolio monitoring.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%231E3A5F'/%3E%3Cpath%20d='M16%207%2023%2022%209%2022Z'%20fill='none'%20stroke='%23CBA85C'%20stroke-width='2.2'%20stroke-linejoin='round'/%3E%3Ccircle%20cx='16'%20cy='17.6'%20r='2.1'%20fill='%23CBA85C'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/app.css">
+<script>(function(){try{var t=localStorage.getItem('aios-theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body>
+<div class="progressbar"></div>
+
+<header class="nav">
+  <div class="shell nav-inner">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1E3A5F"/><path d="M16 7 23 22 9 22Z" fill="none" stroke="#CBA85C" stroke-width="2.2" stroke-linejoin="round"/><circle cx="16" cy="17.6" r="2.1" fill="#CBA85C"/></svg>
+      <span>AI Operating System<small>Private Credit</small></span>
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="rules.html">The Rules</a>
+      <a href="setup.html">Setup</a>
+      <a href="prompts.html">Prompts</a>
+      <a href="examples.html">Examples</a>
+      <a href="drills.html">30 Days</a>
+      <a href="workflows.html">Workflows</a>
+      <a href="play.html">The Play</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="icon-btn theme-toggle" aria-label="Toggle dark mode" title="Toggle light / dark">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 7 7 0 1 0 20 14.5z"/></svg>
+      </button>
+      <button class="icon-btn nav-burger" aria-label="Open menu" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:1rem">
+    <div class="shell">
+      <span class="eyebrow">Your everyday tool</span>
+      <h1>The prompt library</h1>
+      <p class="lead">Copy-paste starting points for the work you actually do. Each one is a job, not a question — and each follows the rules: give context, ask for specifics, make it push back. Hit <strong>Copy</strong>, paste into your AI, then edit the <strong>[bracketed]</strong> bits and attach your document.</p>
+      <div class="callout note" style="max-width:var(--measure)">
+        <div class="callout-h"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 16H3z"/><path d="M12 10v4M12 17h.01"/></svg>Keep it safe</div>
+        <p>Attach real CIMs, models, and agreements only in <strong>Copilot</strong> (inside your firm’s perimeter). Use ChatGPT/Claude for practice with anonymized or public material. See <a href="setup.html#safety">Safety</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1.5rem">
+    <div class="shell">
+      <div class="chips" role="tablist" aria-label="Filter prompts by category">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="screen">Screening</button>
+        <button class="chip" data-filter="cim">CIM &amp; documents</button>
+        <button class="chip" data-filter="covenant">Covenants &amp; agreements</button>
+        <button class="chip" data-filter="model">Financials &amp; models</button>
+        <button class="chip" data-filter="diligence">Comparison &amp; diligence</button>
+        <button class="chip" data-filter="memo">Memos &amp; writing</button>
+        <button class="chip" data-filter="email">Email &amp; comms</button>
+        <button class="chip" data-filter="portfolio">Portfolio</button>
+        <button class="chip" data-filter="learn">Learning</button>
+      </div>
+
+      <!-- SCREENING -->
+      <div data-cat-group="screen">
+        <h2 style="margin-bottom:1rem">Screening &amp; triage</h2>
+
+        <div class="prompt-card" data-cat="screen">
+          <div class="prompt-head"><div class="pt"><h3>Screen a teaser against our box</h3><p>Turn a one-pager into a go / no-go in five lines.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">I'm screening a new opportunity against our box: sectors [list], EBITDA [$10–75M], leverage up to [X]x, hold size [$X]M, senior secured. Here is the teaser: [paste / attach]. In five lines tell me: (1) is this worth a deeper look and why, (2) the single strongest reason to pass, (3) the two pieces of information I'd need before I could decide. Be blunt — assume my time is the scarce resource.</div>
+        </div>
+
+        <div class="prompt-card" data-cat="screen">
+          <div class="prompt-head"><div class="pt"><h3>First-look risk read</h3><p>The three things most likely to kill it, before you spend real time.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Read this teaser. Give me the three things most likely to kill this deal in our credit committee, and the three questions I should ask the banker before spending any more time on it. Don't be polite about the weaknesses. [paste / attach]</div>
+        </div>
+
+        <div class="prompt-card" data-cat="screen">
+          <div class="prompt-head"><div class="pt"><h3>Prioritize two competing deals</h3><p>Decide where this week’s hours go.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">I can only progress one of these this week. Here are two teasers — Deal A: [paste], Deal B: [paste]. Compare them in a short table on credit quality, downside severity, and fit with our box, then recommend which to prioritize and the one reason that decides it.</div>
+        </div>
+      </div>
+
+      <!-- CIM -->
+      <div data-cat-group="cim">
+        <h2 style="margin:2.4rem 0 1rem">CIM &amp; document analysis</h2>
+
+        <div class="prompt-card" data-cat="cim">
+          <div class="prompt-head"><div class="pt"><h3>Summarize a CIM for credit review</h3><p>The day-one win. Plain-English read plus the risks your IC will hit.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">I'm uploading a CIM. First, in plain English: what does this company actually do, who pays them, and how does it make money? Skip the marketing language. Then give me the top five risks to credit quality — for each, the evidence from the document with a page reference, and one line on the mitigant the sponsor is offering (if any). End with the three things my investment committee will push hardest on. [attach CIM]</div>
+        </div>
+
+        <div class="prompt-card" data-cat="cim">
+          <div class="prompt-head"><div class="pt"><h3>Find the real growth thesis</h3><p>Strip the adjectives; expose the load-bearing assumption.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Read this CIM and state the sponsor's growth thesis in three sentences, stripped of optimistic adjectives. Then list every assumption that thesis depends on, and tell me which single assumption is most fragile and why. [attach]</div>
+        </div>
+
+        <div class="prompt-card" data-cat="cim">
+          <div class="prompt-head"><div class="pt"><h3>What’s missing from this CIM</h3><p>It’s a sales document — the story is in the gaps.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">This CIM is a sales document. Tell me what's conspicuously absent — the data, disclosures, or context a careful lender would expect to see and doesn't. For each gap, explain in one line why its absence matters for credit. [attach]</div>
+        </div>
+
+        <div class="prompt-card" data-cat="cim">
+          <div class="prompt-head"><div class="pt"><h3>Extract every market-size claim</h3><p>Build the table; flag the softest numbers.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Pull every quantitative claim about market size, growth rate, or market share in this CIM into a table: the claim, the page, the source it cites (or "no source"), and your read on whether it looks defensible. Then tell me which three claims I should independently verify first. [attach]</div>
+        </div>
+      </div>
+
+      <!-- COVENANTS -->
+      <div data-cat-group="covenant">
+        <h2 style="margin:2.4rem 0 1rem">Credit agreements &amp; covenants</h2>
+
+        <div class="prompt-card" data-cat="covenant">
+          <div class="prompt-head"><div class="pt"><h3>Translate a covenant package</h3><p>Plain English: what they must do, what happens if they miss.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Here is the financial covenant section [paste]. Translate it into plain English: what does the borrower actually have to do each test period, and what happens if they miss? Then tell me what's borrower-friendly and what's lender-friendly about it, and the one definition (EBITDA, debt, cash) most likely to be gamed.</div>
+        </div>
+
+        <div class="prompt-card" data-cat="covenant">
+          <div class="prompt-head"><div class="pt"><h3>Stress a leverage covenant</h3><p>Does a 15% EBITDA drop trip it — or does the definition hide it?</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Given this covenant package and an opening total leverage of [X]x, walk me through exactly what happens if EBITDA falls [15]%: do they trip the leverage covenant, and do the add-backs and EBITDA definition let them avoid tripping it? Show the calculation, and tell me the level of EBITDA decline that actually breaches.</div>
+        </div>
+
+        <div class="prompt-card" data-cat="covenant">
+          <div class="prompt-head"><div class="pt"><h3>Compare terms to market</h3><p>Where it’s loose, where it’s tight, what to negotiate.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Compare this documentation and covenant package to standard market terms for a sponsor-backed [unitranche] of similar size and sector. Where is it loose and where is it tight? Give me the two points I'd most want to negotiate and a one-line justification I could use with the sponsor for each. [paste]</div>
+        </div>
+
+        <div class="prompt-card" data-cat="covenant">
+          <div class="prompt-head"><div class="pt"><h3>Redline against our standard</h3><p>Turn “our preferred position” into a prioritized markup list.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Here is a section of a credit agreement [paste] and here is our firm's preferred position on these points [paste]. Produce a redline-style list of the specific changes I should request, ordered by importance, each with a one-sentence rationale I could drop into a markup. Flag anything in the draft that's a hard no for us.</div>
+        </div>
+      </div>
+
+      <!-- MODELS -->
+      <div data-cat-group="model">
+        <h2 style="margin:2.4rem 0 1rem">Financials &amp; models</h2>
+
+        <div class="prompt-card" data-cat="model">
+          <div class="prompt-head"><div class="pt"><h3>Walk me through this model</h3><p>Excel Copilot. Structure, drivers, and anything fragile.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Walk me through this model. What are the tabs, what does each one do, and what are the four or five assumptions that drive everything else? Then flag anything that looks circular, hard-coded, or inconsistent between tabs.</div>
+        </div>
+
+        <div class="prompt-card" data-cat="model">
+          <div class="prompt-head"><div class="pt"><h3>Stress test the downside</h3><p>Hit growth and margin; read leverage, coverage, headroom.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Stress this model: drop revenue growth by [300]bps and EBITDA margin by [100]bps in years 2 through 5. Tell me total leverage, fixed-charge coverage, and maintenance-covenant headroom in each year, and build a new tab with the output. Then tell me the single assumption the downside is most sensitive to.</div>
+        </div>
+
+        <div class="prompt-card" data-cat="model">
+          <div class="prompt-head"><div class="pt"><h3>Grade the EBITDA bridge</h3><p>Every add-back, scored, with the aggressive total.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Here is the EBITDA bridge from reported to adjusted [paste / attach]. List every adjustment with its dollar amount and the rationale given, and grade each one: defensible / arguable / aggressive / won't fly. Order from most to least defensible. Then total the "aggressive" and "won't fly" adjustments as a percentage of adjusted EBITDA, and tell me what adjusted EBITDA looks like if I strip them out.</div>
+        </div>
+
+        <div class="prompt-card" data-cat="model">
+          <div class="prompt-head"><div class="pt"><h3>Sanity-check the numbers</h3><p>Do the margins, growth, and cash flows actually hang together?</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Here are the key figures from this model [paste]. Check them for internal consistency — do the revenue growth, margins, working capital, and cash conversion hang together, or is something too good to be true? Flag anything contradictory and tell me the one number I should personally verify against source first.</div>
+        </div>
+      </div>
+
+      <!-- DILIGENCE -->
+      <div data-cat-group="diligence">
+        <h2 style="margin:2.4rem 0 1rem">Comparison &amp; diligence</h2>
+
+        <div class="prompt-card" data-cat="diligence">
+          <div class="prompt-head"><div class="pt"><h3>Build a credit comparison table</h3><p>Several names, one defensible table.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Build a comparison table across these [3] companies on the dimensions that matter for credit: scale (revenue/EBITDA), growth, margin, leverage, customer concentration, cash conversion, and the single biggest risk for each. Here is the data: [paste]. After the table, tell me which one is the strongest credit and which is the weakest, and why.</div>
+        </div>
+
+        <div class="prompt-card" data-cat="diligence">
+          <div class="prompt-head"><div class="pt"><h3>Diligence question list</h3><p>Organized by workstream, prioritized by what could change the decision.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Based on everything in front of you, draft a confirmatory diligence question list organized by workstream: financial, commercial, legal/structural, and operational. Put a star next to the questions whose answers could actually change our decision, and cut anything that's just box-ticking. [attach materials]</div>
+        </div>
+
+        <div class="prompt-card" data-cat="diligence">
+          <div class="prompt-head"><div class="pt"><h3>Management meeting question set</h3><p>Open, follow up, and test whether they’re being straight.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Based on these three lead risks [paste], build a management-meeting question set. For each risk give me: (a) the framing question I'd open with, (b) two or three follow-ups to push if their first answer is generic, and (c) one question saved for the end to test whether they're being straight with me. Then add five questions about the business itself that aren't about risk.</div>
+        </div>
+
+        <div class="prompt-card" data-cat="diligence">
+          <div class="prompt-head"><div class="pt"><h3>What would have to be true</h3><p>Surface the load-bearing assumptions and how to test them.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">For this investment thesis to work out, what would have to be true? List the five most load-bearing assumptions, and for each one tell me how I could actually test it in diligence and what evidence would make me comfortable or kill it. Here's the thesis and materials: [paste].</div>
+        </div>
+      </div>
+
+      <!-- MEMOS -->
+      <div data-cat-group="memo">
+        <h2 style="margin:2.4rem 0 1rem">Memos &amp; writing</h2>
+
+        <div class="prompt-card" data-cat="memo">
+          <div class="prompt-head"><div class="pt"><h3>First-draft IC memo</h3><p>60% of the way there, in your firm’s tone.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Using everything I've given you, draft a first-pass IC memo with this structure: (1) the deal in two sentences; (2) why we like it — three specific bullets, no marketing language; (3) the three biggest risks, each with the evidence and how we get comfortable; (4) what we're still trying to figure out in confirmatory diligence; (5) recommendation, one direct paragraph. Match a direct, analytical tone — no "compelling," no "differentiated," no hedging. Don't put any sponsor marketing phrase into the memo.</div>
+        </div>
+
+        <div class="prompt-card" data-cat="memo">
+          <div class="prompt-head"><div class="pt"><h3>Critique my memo as the skeptical PM</h3><p>Find the three questions you didn’t answer.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Read this memo as the most skeptical PM at my firm — 25 years in, has seen every flavor of bad deal. What are the three questions they'll ask me first that I haven't answered here? Then rewrite the two weakest sections to pre-empt them. [paste memo]</div>
+        </div>
+
+        <div class="prompt-card" data-cat="memo">
+          <div class="prompt-head"><div class="pt"><h3>Cut to three sentences</h3><p>For the IC member with 30 seconds.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Cut this to three sentences for an IC member who has 30 seconds. Don't lose the recommendation or the single key risk. Then give me a one-line version for the subject line of an email. [paste]</div>
+        </div>
+
+        <div class="prompt-card" data-cat="memo">
+          <div class="prompt-head"><div class="pt"><h3>Kill the hedging</h3><p>Make every sentence on-the-record.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Rewrite this so every sentence is direct and willing to be on the record. Remove "potentially," "may," "could be," "we believe," and any corporate adjective. Keep my meaning and my recommendation intact — just make it sharper and shorter. [paste]</div>
+        </div>
+      </div>
+
+      <!-- EMAIL -->
+      <div data-cat-group="email">
+        <h2 style="margin:2.4rem 0 1rem">Email, IC &amp; LP communications</h2>
+
+        <div class="prompt-card" data-cat="email">
+          <div class="prompt-head"><div class="pt"><h3>Follow-up that gets a reply</h3><p>Short, useful, human.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Draft a follow-up email to [the CFO we met Tuesday], who [was interested but needs to talk to his board first]. Keep it short and useful — give him something concrete to act on (offer a one-page summary of the key terms he could share with the board). Don't sound like a robot. Goal: [a next conversation this week].</div>
+        </div>
+
+        <div class="prompt-card" data-cat="email">
+          <div class="prompt-head"><div class="pt"><h3>Chase a silent counterparty</h3><p>Direct, not pushy; easy to reply to.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Draft a short note to a [sponsor deal team] that's gone quiet after [our second meeting]. Direct but not pushy. Give them one easy reason to reply and a clear next step. Two short paragraphs maximum.</div>
+        </div>
+
+        <div class="prompt-card" data-cat="email">
+          <div class="prompt-head"><div class="pt"><h3>LP update paragraph</h3><p>Plain, confident, no jargon.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Draft a two-paragraph LP update on [portfolio company]. Plain and confident, no jargon: what changed this quarter, what we're watching, and why we're comfortable — or, if we're not, what we're doing about it. Don't overstate; LPs trust candor. Here are the facts: [paste].</div>
+        </div>
+
+        <div class="prompt-card" data-cat="email">
+          <div class="prompt-head"><div class="pt"><h3>Summarize a thread for my PM</h3><p>Five bullets: where it stands, what’s decided, what’s blocked.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Here's a long email thread [paste / open in Outlook Copilot]. Summarize it in five bullets for my PM: where it stands, what's been decided, what's blocked, and the one thing that needs a decision from us. Then draft a two-line reply I could send to move it forward.</div>
+        </div>
+      </div>
+
+      <!-- PORTFOLIO -->
+      <div data-cat-group="portfolio">
+        <h2 style="margin:2.4rem 0 1rem">Portfolio monitoring</h2>
+
+        <div class="prompt-card" data-cat="portfolio">
+          <div class="prompt-head"><div class="pt"><h3>Quarterly portfolio pass</h3><p>Trajectory, watch-list item, what changed.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Here is a portfolio company's latest compliance certificate, quarterly financials, and my call notes [attach]. Summarize the quarter in five bullets: the trajectory, the single watch-list item, and what materially changed since last quarter. Flag anything trending toward a covenant or liquidity problem.</div>
+        </div>
+
+        <div class="prompt-card" data-cat="portfolio">
+          <div class="prompt-head"><div class="pt"><h3>Track vs. original thesis</h3><p>Ahead where, behind where.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Compare these latest results to the original investment thesis [paste both]. Where is the company tracking ahead of underwriting, and where is it falling behind? Be specific with numbers, and tell me whether the original thesis still holds or needs revisiting.</div>
+        </div>
+
+        <div class="prompt-card" data-cat="portfolio">
+          <div class="prompt-head"><div class="pt"><h3>Draft the PM update</h3><p>Two paragraphs, one thing that matters most.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Draft a two-paragraph portfolio update for my PM — direct, no padding. Flag the one thing they should care about most this quarter and what I recommend we do about it. Here's the quarter: [paste].</div>
+        </div>
+
+        <div class="prompt-card" data-cat="portfolio">
+          <div class="prompt-head"><div class="pt"><h3>Covenant headroom check</h3><p>How much decline before each one trips.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">From these financials and the covenant definitions [paste], calculate current headroom against each financial covenant. Then tell me how many quarters of [10]% year-over-year EBITDA decline it would take to trip each one, assuming everything else holds.</div>
+        </div>
+      </div>
+
+      <!-- LEARNING -->
+      <div data-cat-group="learn">
+        <h2 style="margin:2.4rem 0 1rem">Learning &amp; thinking</h2>
+
+        <div class="prompt-card" data-cat="learn">
+          <div class="prompt-head"><div class="pt"><h3>Teach me like a new analyst</h3><p>Actually understand it, not memorize a definition.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Pretend I'm a new analyst and walk me through [a PIK toggle / this covenant structure / this sub-sector] for the first time. I want to actually understand it, not just know the definition. Use a real example I'd see in the market, and slow down where it gets technical. I'll stop you to ask questions.</div>
+        </div>
+
+        <div class="prompt-card" data-cat="learn">
+          <div class="prompt-head"><div class="pt"><h3>Talk it out (voice mode)</h3><p>Ramble for ten minutes; let it find the signal.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">I'm going to ramble for ten minutes about a problem I'm stuck on. Don't interrupt me and don't try to structure it — just let me talk it out. When I say I'm done, pull out the three things I'm actually worried about, the thing I think I should do, and the thing I'm avoiding. Be honest with me.</div>
+        </div>
+
+        <div class="prompt-card" data-cat="learn">
+          <div class="prompt-head"><div class="pt"><h3>Pre-mortem a deal</h3><p>Assume it went badly — how did it happen?</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Assume we did this deal and two years later it's a workout. Tell me the most likely story of how it went wrong, step by step. Then tell me which early-warning signs I could start watching for now, and which covenant or reporting item would catch each one first. Here's the deal: [paste].</div>
+        </div>
+
+        <div class="prompt-card" data-cat="learn">
+          <div class="prompt-head"><div class="pt"><h3>Industry primer</h3><p>Get up the curve on a sector before the deal lands.</p></div>
+            <button class="copy-btn" aria-label="Copy prompt"><svg class="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg><svg class="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5 9-10"/></svg><span class="copy-label">Copy</span></button>
+          </div>
+          <div class="prompt-body">Build me a primer on [sector]: how the industry is structured, the three or four large players, typical unit economics, how recessions tend to hit it, what private credit lenders specifically worry about in this space, and the questions I should always ask management for a company here. Then pick the one thing most analysts get wrong about this sector.</div>
+        </div>
+      </div>
+
+      <div class="callout today" style="margin-top:2.4rem">
+        <div class="callout-h"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>Do this today</div>
+        <p>Pick the one prompt that matches something on your desk right now. Copy it, edit the brackets, attach the document, and run it. Then use Rule 4 — don’t accept the first answer. Sharpen it once, and you’ll have something you can actually use.</p>
+      </div>
+
+      <div class="pager">
+        <a href="setup.html"><span class="dir">← Back</span><span class="ttl">Get configured</span></a>
+        <a class="next" href="examples.html"><span class="dir">Next →</span><span class="ttl">Before &amp; after</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="shell footer-inner">
+    <div><strong style="color:var(--ink)">The AI Operating System</strong> — Private Credit Edition<br><span class="muted">Use AI as a reasoning partner, not a search engine.</span></div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="rules.html">Rules</a><a href="setup.html">Setup</a><a href="prompts.html">Prompts</a><a href="examples.html">Examples</a><a href="drills.html">30 Days</a><a href="workflows.html">Workflows</a><a href="play.html">The Play</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
