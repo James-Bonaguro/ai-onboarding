@@ -1,14 +1,14 @@
 # Start here
 
-*A note for the two people this was built for.*
+*A note for you two.*
 
 I made you something. It's a website — one link, no apps to install, nothing to
 sign up for. It teaches you how to actually use AI for your job (the real
 stuff: CIMs, credit memos, covenants, models, IC and LP work), not the generic
-"write me a poem" nonsense.
+"write me a poem" nonsense. And I can update any of this in realtime based on any feedback.
 
 You don't need to know anything technical. If you ever see a word that looks like
-developer jargon, ignore it — it's not for you.
+developer jargon, ignore it - it's not for you. 
 
 ## What to click
 
@@ -44,4 +44,4 @@ noticeably faster and sharper than the people next to you. The "Workflows" and
 Text me when you've done the first 30 minutes. I want to hear what the CIM
 summary spat out.
 
-— J.
+James
