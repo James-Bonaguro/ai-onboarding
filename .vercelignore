@@ -1,0 +1,11 @@
+# Only the static site in /docs is served (see vercel.json rewrites).
+# Keep the long-form markdown source and owner docs out of the deployment.
+/doctrine
+/setup
+/examples
+/drills
+/workflows
+/play
+/agents
+/.github
+*.md

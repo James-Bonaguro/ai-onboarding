@@ -5,38 +5,46 @@ reasoning partner, not a search engine. Configure your tools in ~30 minutes,
 then run a six-week practice program built around real deal work — credit memos,
 CIMs, covenants, models, IC and LP communications.
 
-**The product is a website.** It's a self-contained static site in [`/docs`](docs/).
-You read it by clicking one link — no GitHub, no markdown, no developer tooling.
-
-> 👉 **New here and not technical?** You're in the wrong place — open
-> **[START-HERE.md](START-HERE.md)** instead, or just click the link you were sent.
+**The product is the website in [`/docs`](docs/).** It's a self-contained static
+site — plain HTML/CSS/JS, no build step, no dependencies. The reader opens one
+link; they never see GitHub, markdown, or any developer tooling.
 
 ---
 
-## The link to share
+## Hosting: Vercel (private repo)
 
-Once GitHub Pages is enabled (one-time step below), the site lives at:
+This repo is meant to be **private**. The site is published publicly through
+**Vercel**, so the share link is clean and the source content + owner notes in
+this repo stay private.
 
-```
-https://james-bonaguro.github.io/ai-onboarding/
-```
+### Deploy in ~2 minutes (zero config)
 
-Text that URL to anyone. It works on phone and desktop, light and dark, and
-even offline if they save the page.
+1. In Vercel: **Add New → Project → Import Git Repository**, and pick
+   `James-Bonaguro/ai-onboarding`.
+2. Framework Preset: **Other**. Leave Build Command and Output Directory empty —
+   it's a static site. Click **Deploy**.
+3. Done. You get a link like `https://ai-onboarding.vercel.app`.
 
-### One-time setup (repo owner, ~30 seconds)
+No settings to change: [`vercel.json`](vercel.json) rewrites the site root to
+`/docs`, so the homepage is the site (not this README), and
+[`.vercelignore`](.vercelignore) keeps the markdown source out of the
+deployment. Every push to the repo redeploys automatically.
 
-GitHub Pages just needs to be switched on once:
+**Custom domain:** Vercel project → **Settings → Domains** → add your domain and
+follow the DNS instructions (same flow you used for `intersectionstrategies.co`).
 
-1. Go to the repo on GitHub → **Settings** → **Pages**.
-2. Under **Build and deployment → Source**, choose **GitHub Actions**.
-3. Done. Every push to `main` now publishes automatically via
-   [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml).
+### Turn off the old GitHub Pages
 
-The first deploy runs in ~1 minute; the live URL appears at the top of the
-**Pages** settings page and on the workflow run.
+GitHub Pages was rendering this README as a public page. To stop it: make the
+repo **private** (repo **Settings → General → Change visibility**) — on a free
+plan that also disables Pages — or set **Settings → Pages → Source → None**.
 
 ---
+
+## Share the link
+
+After deploy, text the Vercel URL (or your custom domain) to anyone. It works on
+phone and desktop, light and dark, and offline if the page is saved.
 
 ## What's on the site
 
@@ -53,45 +61,41 @@ The first deploy runs in ~1 minute; the live URL appears at the top of the
 
 ---
 
-## Working on it (for me, or an agent like Codex)
+## Working on it locally (for me, or an agent like Codex)
 
-The site is plain HTML/CSS/JS with **no build step and no dependencies**.
+No build step, no dependencies.
+
+- **Preview:** `python3 -m http.server -d docs 8000` → http://localhost:8000, or
+  just open `docs/index.html` in a browser.
+- **Structure:** each page is self-contained; the shared header/nav/footer markup
+  is duplicated per page on purpose (keeps it portable, no templating). The whole
+  design system lives in `docs/assets/app.css`; behavior (theme, copy buttons,
+  tabs, drill progress, mobile nav) in `docs/assets/app.js`.
+- **Design language:** editorial finance — system serif display + system sans
+  body (zero web fonts), hairline rules, light/dark, no AI-gradient clichés.
+  Tokens are at the top of `app.css`.
 
 ```
 docs/
-  index.html, rules.html, setup.html, prompts.html,
-  examples.html, drills.html, workflows.html, play.html, 404.html
-  assets/
-    app.css   ← the whole design system (tokens, components, light/dark)
-    app.js     ← theme toggle, copy buttons, tabs, drill progress, mobile nav
-  .nojekyll
+  index.html rules.html setup.html prompts.html
+  examples.html drills.html workflows.html play.html 404.html
+  assets/app.css assets/app.js
+vercel.json        ← serves /docs as the site root
+.vercelignore      ← keeps markdown source out of the deploy
 ```
-
-- **Preview locally:** open `docs/index.html` in a browser, or run a tiny server
-  from the repo root: `python3 -m http.server -d docs 8000` → http://localhost:8000
-- **Editing content:** each page is self-contained. The shared header/nav/footer
-  markup is duplicated per page on purpose (no templating, so it stays simple and
-  portable). Change `assets/app.css` to restyle everything at once.
-- **Design language:** editorial finance — system serif display, system sans body
-  (zero web fonts = instant load + fully offline), hairline rules, light/dark,
-  no AI-gradient clichés. Tokens live at the top of `app.css`.
-- **Verify before pushing:** `python3 -m http.server -d docs` and click through, or
-  re-run the link/anchor check used during the rebuild.
 
 ### Source content
 
-The original long-form content also lives as markdown in `doctrine/`, `setup/`,
-`examples/`, `drills/`, `workflows/`, `play/`, and `agents/`. These remain as an
+The long-form content also lives as markdown in `doctrine/`, `setup/`,
+`examples/`, `drills/`, `workflows/`, `play/`, and `agents/`. These stay as an
 editable source-of-truth and reference; the **site in `/docs` is the delivered
-product**. See [CLAUDE.md](CLAUDE.md) for voice, audience, and constraints, and
-[CHANGELOG.md](CHANGELOG.md) for what changed in this rebuild.
-
----
+product**. See [CLAUDE.md](CLAUDE.md) for voice/audience/constraints and
+[CHANGELOG.md](CHANGELOG.md) for the rebuild.
 
 ## Accuracy
 
-Setup steps were verified against the tools' current behavior (mid-2026),
-including Microsoft 365 Copilot's native Custom Instructions + Memory and Copilot
+Setup steps were verified against the tools' current behavior (mid-2026):
+Microsoft 365 Copilot's native Custom Instructions + Memory and Copilot
 Notebooks, ChatGPT's Personalization/Memory, and Claude's profile preferences and
-Projects. Tool UIs move — if a menu label has shifted, the fix is almost always
-under **Settings → Personalization** (or **Profile**).
+Projects. Tool UIs move — if a label has shifted, the fix is almost always under
+**Settings → Personalization** (or **Profile**).
