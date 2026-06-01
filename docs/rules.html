@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Five Rules — The AI Operating System</title>
+<meta name="description" content="The mental model for using AI as a reasoning partner in private credit: give it jobs, give it context, brief it like a new analyst, treat the first answer as a draft, and make it fight you. Plus how you actually get good.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%231E3A5F'/%3E%3Cpath%20d='M16%207%2023%2022%209%2022Z'%20fill='none'%20stroke='%23CBA85C'%20stroke-width='2.2'%20stroke-linejoin='round'/%3E%3Ccircle%20cx='16'%20cy='17.6'%20r='2.1'%20fill='%23CBA85C'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/app.css">
+<script>(function(){try{var t=localStorage.getItem('aios-theme');if(!t){t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+</head>
+<body>
+<div class="progressbar"></div>
+
+<header class="nav">
+  <div class="shell nav-inner">
+    <a class="brand" href="index.html">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1E3A5F"/><path d="M16 7 23 22 9 22Z" fill="none" stroke="#CBA85C" stroke-width="2.2" stroke-linejoin="round"/><circle cx="16" cy="17.6" r="2.1" fill="#CBA85C"/></svg>
+      <span>AI Operating System<small>Private Credit</small></span>
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Primary">
+      <a href="rules.html">The Rules</a>
+      <a href="setup.html">Setup</a>
+      <a href="prompts.html">Prompts</a>
+      <a href="examples.html">Examples</a>
+      <a href="drills.html">30 Days</a>
+      <a href="workflows.html">Workflows</a>
+      <a href="play.html">The Play</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="icon-btn theme-toggle" aria-label="Toggle dark mode" title="Toggle light / dark">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 7 7 0 1 0 20 14.5z"/></svg>
+      </button>
+      <button class="icon-btn nav-burger" aria-label="Open menu" aria-controls="nav-links">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom:1rem">
+    <div class="shell">
+      <span class="eyebrow">The mental model · read once, ~1 hour</span>
+      <h1>The Five Rules</h1>
+      <p class="lead">This is the foundation. Five short rules that change how AI behaves for you — and a sixth that explains how you actually get good. You can skim them in eight minutes today and come back. Don’t skip Rule 6.</p>
+      <nav class="subnav" aria-label="On this page">
+        <a href="#r1">1 · Give it jobs</a>
+        <a href="#r2">2 · It knows nothing about you</a>
+        <a href="#r3">3 · Brief it like a new analyst</a>
+        <a href="#r4">4 · First answer is a draft</a>
+        <a href="#r5">5 · Make it fight you</a>
+        <a href="#r6">6 · How you get good</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- RULE 1 -->
+  <section class="section" id="r1">
+    <div class="shell">
+      <span class="eyebrow"><span class="kicker-num">Rule 1</span></span>
+      <h2 style="margin-top:.5rem">Stop asking it questions. Start giving it jobs.</h2>
+      <div class="prose stack" style="margin-top:1.2rem">
+        <p>When most people open their AI, they type a question — <em>“What are the key risks in a leveraged buyout?”</em> — and get back a Wikipedia article. Then they decide AI is useless.</p>
+        <p>Instead of asking a question, give it a job:</p>
+      </div>
+      <div class="chat" style="max-width:var(--measure); margin-top:1rem">
+        <div class="bubble ai"><div class="who">Give it a job</div><p>“I’m reviewing a sponsor-backed LBO with 5.5x total leverage. The add-backs represent 30% of adjusted EBITDA. Write me the three strongest pushback arguments I should bring to the credit committee about why these add-backs are aggressive.”</p></div>
+      </div>
+      <p class="prose" style="margin-top:1rem">Same topic. Completely different output. The first gives you a textbook answer. The second gives you something you can use in a meeting.</p>
+
+      <div class="table-wrap" style="max-width:860px">
+        <table>
+          <thead><tr><th>Stop doing this</th><th>Start doing this</th></tr></thead>
+          <tbody>
+            <tr><td>“What is covenant analysis?”</td><td>“Here’s the covenant package. Tell me which terms are borrower-friendly and why I should push back.”</td></tr>
+            <tr><td>“How do I analyze a CIM?”</td><td>“I’m uploading this CIM. Extract the top 5 risks to credit quality based on my firm’s criteria.”</td></tr>
+            <tr><td>“Explain EBITDA adjustments.”</td><td>“Here are the proposed adjustments. Tell me which ones won’t survive diligence and why.”</td></tr>
+            <tr><td>“What’s a good client email?”</td><td>“Draft a follow-up to a CFO who went silent after our second meeting. Direct but not aggressive. Goal: a meeting this week.”</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="prose"><strong>Google answers questions. AI does work.</strong> Treat it like Google and you get Google-quality answers — generic and surface-level. Treat it like a junior analyst sitting next to you and you get drafts, analysis, pushback, and output you can build on.</p>
+
+      <div class="rule-quote"><span class="lbl">The one-sentence rule</span>Before you type anything, ask: “Am I asking a question, or assigning a task?” If it’s a question, rewrite it as a task. Every time.</div>
+    </div>
+  </section>
+
+  <!-- RULE 2 -->
+  <section class="section" id="r2">
+    <div class="shell">
+      <span class="eyebrow"><span class="kicker-num">Rule 2</span></span>
+      <h2 style="margin-top:.5rem">Right now, your AI knows nothing about you.</h2>
+      <div class="prose stack" style="margin-top:1.2rem">
+        <p>Open your AI right now. It has no idea what your job is, what industry you’re in, how senior you are, what your firm’s standards look like, or what kind of work you produce. It’s like hiring someone and never telling them what company they work for. Of course the output is generic.</p>
+        <p><strong>The fix:</strong> every AI tool lets you store background about yourself that runs silently behind every conversation. Set it up once, and every output improves automatically. The <a href="setup.html">setup guide</a> walks you through it for Copilot, ChatGPT, and Claude with ready-to-paste text.</p>
+      </div>
+
+      <h3 class="prose" style="margin-top:2rem">Before vs. after</h3>
+      <div class="ba" style="margin-top:1rem">
+        <div class="ba-col before">
+          <div class="ba-h">Before setup</div>
+          <div class="ba-body">
+            <div class="who">You</div><p>“Help me with this deal memo.”</p>
+            <div class="who">AI</div><p class="ai-text">“Sure! Here’s a general template for a deal memorandum. A deal memo typically includes an executive summary, company overview, financial analysis…”</p>
+          </div>
+        </div>
+        <div class="ba-col after">
+          <div class="ba-h">After setup</div>
+          <div class="ba-body">
+            <div class="who">You</div><p>“Help me with this deal memo.”</p>
+            <div class="who">AI</div><p class="ai-text">“Based on your firm’s IC format, I’ll structure this as: (1) Investment Thesis with the key return drivers, (2) Business Quality, (3) Key Risks with mitigants, (4) Preliminary Terms. Want me to start with the thesis, or do you want to upload the CIM first?”</p>
+          </div>
+        </div>
+      </div>
+      <p class="prose" style="margin-top:1rem">Same question. Wildly different output. The only thing that changed is that the AI knows who it’s talking to.</p>
+
+      <div class="rule-quote"><span class="lbl">The one-sentence rule</span>The more your AI knows about you and your work, the less time you spend fixing its output. Set it up once. Benefit forever.</div>
+    </div>
+  </section>
+
+  <!-- RULE 3 -->
+  <section class="section" id="r3">
+    <div class="shell">
+      <span class="eyebrow"><span class="kicker-num">Rule 3</span></span>
+      <h2 style="margin-top:.5rem">Talk to it like you’re briefing a new analyst.</h2>
+      <div class="prose stack" style="margin-top:1.2rem">
+        <p>People Google “best AI prompts” and copy-paste them like magic spells: <em>“Act as a world-class financial analyst with 20 years at Goldman Sachs…”</em> This is useless. The AI doesn’t get smarter because you told it to pretend to be someone impressive.</p>
+        <p>Talk to it the way you’d brief a sharp new analyst on day one. You wouldn’t hand a new hire a magic phrase and walk away. You’d say: <em>“Here’s what we’re working on. Here’s what I need. Here’s what matters. Here’s what to watch out for. Go.”</em> That’s the entire skill.</p>
+      </div>
+
+      <div class="table-wrap" style="max-width:900px">
+        <table>
+          <thead><tr><th>Step</th><th>What it means</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td><strong>What I have</strong></td><td>Give it the raw material</td><td>“B2B software co. $45M revenue, 85% gross margins, growing 12% YoY.”</td></tr>
+            <tr><td><strong>What I need</strong></td><td>Tell it exactly what to produce</td><td>“A one-page risk summary for my credit committee.”</td></tr>
+            <tr><td><strong>What to avoid</strong></td><td>Set guardrails</td><td>“No generic risks. Focus on what threatens debt service coverage.”</td></tr>
+            <tr><td><strong>What to fix</strong></td><td>After the draft, redirect</td><td>“Too academic. Make it presentable. Add customer concentration.”</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ba">
+        <div class="ba-col before"><div class="ba-h">Copy-pasted prompt</div><div class="ba-body"><p class="ai-text">“Act as a senior credit analyst and analyze this company for me.”</p></div></div>
+        <div class="ba-col after"><div class="ba-h">Briefing an analyst</div><div class="ba-body"><p class="ai-text">“I’m reviewing a mid-market healthcare services company, PE-backed, 4x levered. I’m uploading the CIM. Pull out the three biggest risks to the thesis and explain why the sponsor’s EBITDA adjustments might not hold up in diligence. Write it the way I’d present to my IC — direct, no hedging, specific to this deal.”</p></div></div>
+      </div>
+      <p class="prose" style="margin-top:1rem">The second one works because you told it what you have, what you need, what to watch for, and how to write it. That’s not prompt engineering. That’s clear communication.</p>
+
+      <div class="rule-quote"><span class="lbl">The one-sentence rule</span>Don’t search for the perfect prompt. Just tell it what you’d tell a smart person sitting next to you.</div>
+    </div>
+  </section>
+
+  <!-- RULE 4 -->
+  <section class="section" id="r4">
+    <div class="shell">
+      <span class="eyebrow"><span class="kicker-num">Rule 4</span></span>
+      <h2 style="margin-top:.5rem">Your first answer is a first draft, not a final product.</h2>
+      <div class="prose stack" style="margin-top:1.2rem">
+        <p>Most people type something in, get a response, think “okay but not great,” close the window, and do it themselves. That’s like asking an analyst to write something, reading their first draft, and firing them instead of giving feedback.</p>
+        <p>The first response is a starting point. The real skill is knowing what to say next. After every answer you have three moves:</p>
+      </div>
+
+      <div class="table-wrap" style="max-width:900px">
+        <table>
+          <thead><tr><th>Move</th><th>When</th><th>What to say</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Sharpen</strong></td><td>Right direction, too vague</td><td>“Too high-level. Give me specific numbers and examples.”</td></tr>
+            <tr><td><strong>Redirect</strong></td><td>Wrong direction</td><td>“You’re focused on revenue growth. I care about cash-flow sustainability. Start over with that lens.”</td></tr>
+            <tr><td><strong>Push deeper</strong></td><td>Surface is fine, need more</td><td>“Good start. Now stress-test point three — what if their largest customer is 40% of revenue and doesn’t renew?”</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="prose">Three rounds, four minutes</h3>
+      <div class="chat" style="max-width:var(--measure); margin-top:1rem">
+        <div class="bubble you"><div class="who">Round 1 — You</div><p>“Review this covenant package and tell me what’s weak.”</p></div>
+        <div class="bubble ai"><div class="who">AI</div><p>Gives you a general list of covenant concerns.</p></div>
+        <div class="bubble you"><div class="who">Round 2 — You</div><p>“The leverage covenant looks loose. Walk me through exactly what happens if EBITDA drops 15% — do they trip it, or does the calculation method let them hide it?”</p></div>
+        <div class="bubble ai"><div class="who">AI</div><p>Now gives you a specific scenario analysis with the actual math.</p></div>
+        <div class="bubble you"><div class="who">Round 3 — You</div><p>“Good. Now write that as a two-paragraph risk flag I can drop into my IC memo.”</p></div>
+        <div class="bubble ai"><div class="who">AI</div><p>Gives you a polished, copy-paste-ready paragraph.</p></div>
+      </div>
+      <p class="prose" style="margin-top:1rem">The people who get the most out of AI aren’t better at the first message. They’re better at the second and third. They know how to steer. Most people quit after Round 1.</p>
+
+      <div class="rule-quote"><span class="lbl">The one-sentence rule</span>Never accept the first response as the final product. The real value is in rounds 2 and 3.</div>
+    </div>
+  </section>
+
+  <!-- RULE 5 -->
+  <section class="section" id="r5">
+    <div class="shell">
+      <span class="eyebrow"><span class="kicker-num">Rule 5</span></span>
+      <h2 style="margin-top:.5rem">Make it fight you.</h2>
+      <div class="prose stack" style="margin-top:1.2rem">
+        <p>By default, AI agrees with everything you say. You say “I think this is a strong credit,” it says “Great analysis! Here are more reasons it’s strong.” That’s not helpful. That’s dangerous — you just got your own thesis repeated back with a bow on it.</p>
+        <p>In private credit, the whole game is downside protection. You already know the bull case; the sponsor told you the bull case. What you need is someone to find the holes before your IC does. AI does this extremely well — but only if you tell it to.</p>
+      </div>
+
+      <div class="callout key">
+        <div class="callout-h"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7z"/></svg>Add this to your setup</div>
+        <p>“When I share analysis or a thesis, your job is to find the weaknesses — not to validate me. If my logic has gaps, say so directly. If my assumptions are aggressive, flag them. I’d rather hear the problems from you now than from my committee later.” Once it’s in your settings, it runs automatically.</p>
+      </div>
+
+      <div class="ba">
+        <div class="ba-col before"><div class="ba-h">Without the setting</div><div class="ba-body"><div class="who">You</div><p>“I think this company’s 20% EBITDA margins are sustainable.”</p><div class="who">AI</div><p class="ai-text">“That’s a reasonable view. The company has demonstrated consistent margins over the past three years.”</p></div></div>
+        <div class="ba-col after"><div class="ba-h">With the setting</div><div class="ba-body"><div class="who">You</div><p>“I think this company’s 20% EBITDA margins are sustainable.”</p><div class="who">AI</div><p class="ai-text">“Those margins are supported by a single long-term contract that reprices in 18 months. If you lose even 200bps on renewal, debt service coverage drops below 1.2x. Are you sizing the facility to the current margin or to a downside scenario?”</p></div></div>
+      </div>
+
+      <div class="rule-quote"><span class="lbl">The one-sentence rule</span>The most valuable thing your AI can do is tell you where you’re wrong before someone else does.</div>
+    </div>
+  </section>
+
+  <!-- RULE 6 -->
+  <section class="section" id="r6">
+    <div class="shell">
+      <span class="eyebrow"><span class="kicker-num">Rule 6</span> · the one nobody teaches</span>
+      <h2 style="margin-top:.5rem">How you actually get good at this.</h2>
+      <div class="prose stack" style="margin-top:1.2rem">
+        <p>There’s no course, no certification, no YouTube playlist that teaches this. The people who are best at using AI all have the same story: they just started using it. Not by studying it — by doing things with it.</p>
+        <p>The gap between “I have Copilot” and “I’m producing better work twice as fast” isn’t knowledge. It’s reps. You need the instinct for how to give context, how to steer, and when to push back. The fastest way to build it is to use AI as a learning accelerator in your day-to-day life — not to replace your thinking, but to expand it.</p>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:1.4rem">
+        <div class="card"><h3>Get in the habit</h3><ul class="prose"><li>Planning a trip? Plan it together — better itinerary, less browsing.</li><li>Comparing two products? Have it break down the tradeoffs.</li><li>Something wrong with your car? Describe the symptoms and get a real explanation before the shop.</li><li>Trying to understand a financial concept, a tax rule, a negotiation tactic? Go deeper than a search ever could.</li></ul></div>
+        <div class="card"><h3>Why it works</h3><p>Every one of these builds the exact muscles you’ll use at work: giving context, being specific, iterating, pushing back. And you learn something real in the process. How many times a day do you hit something you’re curious about and just move on? Pull out AI in those moments instead. That’s the practice.</p></div>
+      </div>
+
+      <h3 class="prose" style="margin-top:2.2rem">The voice trick</h3>
+      <p class="prose">This is the single most underrated way to use AI, and almost nobody talks about it. <strong>Put your headphones in. Go for a walk. Talk.</strong></p>
+      <p class="prose">Most AI tools have a voice mode — or just use your phone’s voice-to-text and paste it in. When you talk out loud, you think differently than when you type. You’re less filtered. You say what you actually mean instead of trying to write the “perfect prompt.”</p>
+      <ul class="prose">
+        <li>Stuck on a problem at work? Walk fifteen minutes and explain it out loud. Half the time you’ll solve it yourself while talking. The other half, the AI catches what you missed.</li>
+        <li>Have a vague idea you can’t articulate? Talk it through, then say: “I just rambled for five minutes. Organize what I said into a clear structure.”</li>
+        <li>Staring at a blank screen? Talk through what you want to say, then ask it to clean it up.</li>
+      </ul>
+      <p class="prose">Voice-to-text doesn’t produce clean input. That’s the point. Raw thinking goes in, structured output comes out. The AI is very good at that translation.</p>
+
+      <h3 class="prose" style="margin-top:2.2rem">What getting good actually looks like</h3>
+      <div class="table-wrap" style="max-width:760px">
+        <table>
+          <tbody>
+            <tr><td><strong>Week 1</strong></td><td>Basic questions, generic answers. You think it’s overhyped.</td></tr>
+            <tr><td><strong>Week 3</strong></td><td>You give it more context, answers get noticeably better. You catch yourself thinking “I should ask the AI about this” all day.</td></tr>
+            <tr><td><strong>Month 2</strong></td><td>You stop thinking about “prompts.” You just talk to it, and you know exactly what to say to fix a weak answer.</td></tr>
+            <tr><td><strong>Month 4</strong></td><td>Colleagues notice your work is faster and better. They ask what you’re doing differently. You can’t fully explain it — it’s become instinct.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="prose">That progression doesn’t come from reading about AI. It comes from making it part of how you think and learn every day.</p>
+
+      <div class="rule-quote"><span class="lbl">The one-sentence rule</span>The best way to get good at AI is to use it as a learning accelerator for things you actually care about — not to study it for something you might need later.</div>
+
+      <div class="callout today">
+        <div class="callout-h"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>Do this today</div>
+        <p>Pick one thing you’re genuinely curious about — work or not — and have a real back-and-forth with AI about it right now. Push back on its first answer. Ask it to go deeper. That five-minute habit, repeated, is the whole game.</p>
+      </div>
+
+      <div class="pager">
+        <a href="index.html"><span class="dir">← Back</span><span class="ttl">Start / overview</span></a>
+        <a class="next" href="setup.html"><span class="dir">Next →</span><span class="ttl">Get configured</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="shell footer-inner">
+    <div><strong style="color:var(--ink)">The AI Operating System</strong> — Private Credit Edition<br><span class="muted">Use AI as a reasoning partner, not a search engine.</span></div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="rules.html">Rules</a><a href="setup.html">Setup</a><a href="prompts.html">Prompts</a><a href="examples.html">Examples</a><a href="drills.html">30 Days</a><a href="workflows.html">Workflows</a><a href="play.html">The Play</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

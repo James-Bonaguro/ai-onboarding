@@ -5,6 +5,21 @@ The private credit vertical of a premium learning system that teaches analytical
 
 Sequence: **Doctrine → Setup → Drills → Workflows → Play**. Agents are deferred to v2 as a retainer deliverable (see `agents/README.md`).
 
+## The product is the website in `/docs`
+As of the v2 rebuild, the **delivered product is a self-contained static site** in `docs/`, published via GitHub Pages so the two intended readers click one link and never see GitHub, a repo, or markdown. The long-form markdown in the content folders is now the **editable source-of-truth and reference**; the site is what ships. When you change content, update the relevant `docs/*.html` page (that's what people read). See `README.md` for how to preview/deploy and `CHANGELOG.md` for the rebuild.
+
+- Stack: plain HTML/CSS/JS, **no build step, no dependencies, no web fonts** (system serif display + system sans body → instant load, fully offline-safe).
+- Shared design system lives in `docs/assets/app.css`; behavior (theme toggle, copy buttons, tabs, drill progress, mobile nav) in `docs/assets/app.js`. Restyle everything from the tokens at the top of `app.css`.
+- Header/nav/footer markup is intentionally duplicated per page (no templating) to keep it portable and dependency-free. Keep the eight content pages + `404.html` consistent.
+- Pages: `index` (start here), `rules`, `setup`, `prompts` (copy-paste library), `examples`, `drills` (with browser-saved progress), `workflows` (CIM→IC memo + portfolio monitoring), `play`.
+- **Verify before pushing:** open `docs/index.html` in a browser (or `python3 -m http.server -d docs`), click through, confirm copy buttons / tabs / drill checkboxes / theme toggle / mobile nav still work, and that internal links + anchors resolve.
+
+## Design language (non-negotiable)
+Editorial finance, premium and trustworthy. Serif display, sans body, hairline rules, generous whitespace, restrained navy + brass accents, light/dark. **No AI-gradient clichés, no purple-to-cyan, no cheesy hero glows.** Clean and fast over flashy.
+
+## Accuracy rules for setup steps
+Tool UIs change. Verify against current behavior before writing setup steps — do not rely on stale knowledge. As of mid-2026: Microsoft 365 Copilot has **native Custom Instructions + Memory** and **Copilot Notebooks is GA** (do not repeat the old "enterprise strips custom instructions" claim); ChatGPT uses Settings → Personalization → Custom Instructions + Memory; Claude uses Settings → Profile preferences + Projects. No invented menus or features. Keep a safety note: work materials in Copilot only; ChatGPT/Claude for practice.
+
 ## Audience
 Private credit associates, VPs, and AVPs whose firms have recently mandated AI competence. Smart, busy, analytical, skeptical of AI hype. Most have opened ChatGPT once, bounced off it, and now feel pressure to get good without knowing how. Many are on enterprise Microsoft 365 Copilot — sometimes with Agent Builder and Copilot Studio available, sometimes locked down to chat-only. Content assumes Copilot is the default tool; Claude and ChatGPT are secondary.
 
@@ -26,6 +41,8 @@ The repo should deliver **weeks of structured practice**, not a one-sitting read
 The old 45-minute onboarding target is dead. Five Rules + Setup is still the entry point (about an hour), but the real product starts at the drills.
 
 ## Product structure
+- `docs/` — **the shipped website** (what readers actually open). Build edits here.
+- The folders below are the long-form **source content** behind the site:
 - `doctrine/` — mental model (Five Rules + How You Actually Get Good). Read-once foundation.
 - `setup/` — configuration and Copilot power moves. The "get your tool ready" layer.
 - `examples/` — before/after comparisons. Shows the reader what "good" looks like.

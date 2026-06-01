@@ -1,67 +1,97 @@
 # The AI Operating System — Private Credit Edition
 
-This will make your work faster and make you visibly better at your job.
+A field manual that teaches private credit professionals to use AI as a
+reasoning partner, not a search engine. Configure your tools in ~30 minutes,
+then run a six-week practice program built around real deal work — credit memos,
+CIMs, covenants, models, IC and LP communications.
 
-This isn't a tutorial. It's a field manual and a six-week practice program. If you work through it, you'll be the person at your firm who actually knows how to use AI — not the person who claims they do.
+**The product is a website.** It's a self-contained static site in [`/docs`](docs/).
+You read it by clicking one link — no GitHub, no markdown, no developer tooling.
 
----
-
-## Read This First
-
-Your firm has probably told you, in one form or another, that AI competence is now part of staying on track for promotion. Most people are going to respond to that by watching YouTube videos about "the best prompts." That's like memorizing pickup lines instead of learning how to hold a conversation. You're going to do something different.
-
-There are four things that make someone actually good at using AI for analytical work:
-
-1. A correct mental model for what AI is and isn't
-2. A properly configured tool that knows who you are and what good work looks like at your firm
-3. Reps — daily, structured, boring practice until it becomes instinct
-4. A system for turning AI wins into visibility at your firm
-
-This repo is built around those four things, in that order. Skip none of them.
+> 👉 **New here and not technical?** You're in the wrong place — open
+> **[START-HERE.md](START-HERE.md)** instead, or just click the link you were sent.
 
 ---
 
-## How to Work Through This
+## The link to share
 
-### Step 1 — The Five Rules (one hour)
-Read [doctrine/01 through 06](doctrine/01-stop-asking-questions.md) in order. This is the mental model. One hour total. Do not skip Rule 6 — it is the most important one and nobody else teaches it.
+Once GitHub Pages is enabled (one-time step below), the site lives at:
 
-### Step 2 — Get Configured (30 minutes)
-Work through [setup/01-getting-configured.md](setup/01-getting-configured.md). By the end of this you'll have Copilot, Claude, or ChatGPT set up with persistent context about who you are and what your firm's standards look like. Then read [setup/02-copilot-power-moves.md](setup/02-copilot-power-moves.md) if you're on Microsoft 365 Copilot (most private credit firms are). This is where the real leverage is.
+```
+https://james-bonaguro.github.io/ai-onboarding/
+```
 
-### Step 3 — The First 30 Days (daily, 15–30 minutes)
-Start [drills/01-first-30-days.md](drills/01-first-30-days.md). This is the centerpiece of the whole product. Structured daily practice, Monday through Friday for four weeks. Each day is a small assignment — most take 15 minutes, some take 30. You do not have to do them in the evenings; almost all of them fit inside a workday.
+Text that URL to anyone. It works on phone and desktop, light and dark, and
+even offline if they save the page.
 
-**If you only do one thing from this repo, do the 30-day drill program.** Everything else is support.
+### One-time setup (repo owner, ~30 seconds)
 
-### Step 4 — Real Workflows (as you need them)
-Once you've finished the drills and have a real deal or portfolio task in front of you, pull up the relevant walkthrough in [workflows/](workflows/). Each one is an end-to-end: start with a CIM and some notes, end with a presentable IC memo, or start with 12 compliance certs and end with a portfolio summary for your PM. These are not before/after examples. They're full sequences with exact prompts.
+GitHub Pages just needs to be switched on once:
 
-### Step 5 — The Play (week 3 onward)
-Read [play/01-why-youre-really-here.md](play/01-why-youre-really-here.md) when you start noticing you're getting faster. This is the part nobody else in the AI-training world will say out loud: how to turn being good at AI into visibility, bigger bonuses, and earlier promotions without sounding like a hype guy. Read it once early, then again a few weeks later when you have wins to document.
+1. Go to the repo on GitHub → **Settings** → **Pages**.
+2. Under **Build and deployment → Source**, choose **GitHub Actions**.
+3. Done. Every push to `main` now publishes automatically via
+   [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml).
 
----
-
-## What's Inside
-
-- **[doctrine/](doctrine/)** — The Five Rules + Rule 6 (How You Actually Get Good). Mental model. Read once.
-- **[setup/](setup/)** — Getting configured + Copilot power moves (OneNote as context, Copilot Notebooks, Agent Builder, Excel/Outlook/Teams patterns).
-- **[examples/](examples/)** — Before and after. Shows you what "good output" looks like.
-- **[drills/](drills/)** — The 30-day structured practice program. Do this.
-- **[workflows/](workflows/)** — End-to-end walkthroughs of real private credit work.
-- **[play/](play/)** — Career positioning. How to make your AI competence visible at your firm.
-- **[agents/](agents/)** — Custom-built agents come in v2 as part of ongoing support. See the folder for what's coming.
+The first deploy runs in ~1 minute; the live URL appears at the top of the
+**Pages** settings page and on the workflow run.
 
 ---
 
-## Notes on Your Tool
+## What's on the site
 
-Most private credit firms are on **Microsoft 365 Copilot** because it's already paid for as part of the Microsoft bundle and because it can see your firm's SharePoint, OneDrive, Outlook, and Teams data inside the firm's security perimeter. That's a real advantage over Claude and ChatGPT for work materials, and this repo assumes Copilot is your default.
-
-If you're using **Claude** or **ChatGPT** for personal learning, for practice outside the firm's perimeter, or because your firm doesn't have Copilot yet, the drills and workflows are written to work with any of the three. When a step is specific to one tool, it's labeled.
-
-You do not need to know anything about GitHub, repos, or markdown files to use this. If any of those words are unfamiliar, ignore them. The "files" in this repo are just short documents you can read one at a time.
+| Page | What it is |
+|---|---|
+| **Start here** (`index.html`) | The promise, the 30-minute first win, the full journey map. |
+| **The Rules** (`rules.html`) | The five rules + "how you actually get good." The mental model. |
+| **Setup** (`setup.html`) | Current, verified steps to configure Copilot, ChatGPT, and Claude — with ready-to-paste operating profiles and Copilot power moves. |
+| **Prompts** (`prompts.html`) | A filterable copy-paste prompt library built for private credit work. |
+| **Examples** (`examples.html`) | Before/after: default AI vs. a configured reasoning partner. |
+| **30 Days** (`drills.html`) | The 20-drill practice program, with progress tracking saved in the browser. |
+| **Workflows** (`workflows.html`) | End-to-end: CIM → IC memo, and quarterly portfolio monitoring. |
+| **The Play** (`play.html`) | Turning AI competence into visibility, bonus, and promotion. |
 
 ---
 
-Start here → [The Five Rules](doctrine/01-stop-asking-questions.md)
+## Working on it (for me, or an agent like Codex)
+
+The site is plain HTML/CSS/JS with **no build step and no dependencies**.
+
+```
+docs/
+  index.html, rules.html, setup.html, prompts.html,
+  examples.html, drills.html, workflows.html, play.html, 404.html
+  assets/
+    app.css   ← the whole design system (tokens, components, light/dark)
+    app.js     ← theme toggle, copy buttons, tabs, drill progress, mobile nav
+  .nojekyll
+```
+
+- **Preview locally:** open `docs/index.html` in a browser, or run a tiny server
+  from the repo root: `python3 -m http.server -d docs 8000` → http://localhost:8000
+- **Editing content:** each page is self-contained. The shared header/nav/footer
+  markup is duplicated per page on purpose (no templating, so it stays simple and
+  portable). Change `assets/app.css` to restyle everything at once.
+- **Design language:** editorial finance — system serif display, system sans body
+  (zero web fonts = instant load + fully offline), hairline rules, light/dark,
+  no AI-gradient clichés. Tokens live at the top of `app.css`.
+- **Verify before pushing:** `python3 -m http.server -d docs` and click through, or
+  re-run the link/anchor check used during the rebuild.
+
+### Source content
+
+The original long-form content also lives as markdown in `doctrine/`, `setup/`,
+`examples/`, `drills/`, `workflows/`, `play/`, and `agents/`. These remain as an
+editable source-of-truth and reference; the **site in `/docs` is the delivered
+product**. See [CLAUDE.md](CLAUDE.md) for voice, audience, and constraints, and
+[CHANGELOG.md](CHANGELOG.md) for what changed in this rebuild.
+
+---
+
+## Accuracy
+
+Setup steps were verified against the tools' current behavior (mid-2026),
+including Microsoft 365 Copilot's native Custom Instructions + Memory and Copilot
+Notebooks, ChatGPT's Personalization/Memory, and Claude's profile preferences and
+Projects. Tool UIs move — if a menu label has shifted, the fix is almost always
+under **Settings → Personalization** (or **Profile**).
