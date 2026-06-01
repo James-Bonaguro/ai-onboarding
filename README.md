@@ -1,6 +1,6 @@
 # The AI Operating System — Private Credit Edition
 
-Someone sent you this because they think it'll make your work faster and make you visibly better at your job.
+Thsi will make your work faster and make you visibly better at your job.
 
 This isn't a tutorial. It's a field manual and a six-week practice program. If you work through it, you'll be the person at your firm who actually knows how to use AI — not the person who claims they do.
 
