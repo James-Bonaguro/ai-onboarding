@@ -17,7 +17,7 @@ As of the v2 rebuild, the **delivered product is a self-contained static site** 
 ## Deployment & related projects (cross-session context)
 - **Live app:** https://ai-onboarding-system.vercel.app/ — Vercel project `ai-onboarding-system` (team `jamesbonaguro-6362s-projects`), auto-deploys from `main`. Repo is intended to be **private**; the site is the only public surface.
 - `vercel.json` serves `/docs` at the site root via rewrites. Do **not** re-add `cleanUrls` — it conflicts with the root→`/docs/index.html` rewrite and 404s the homepage. `.vercelignore` keeps the markdown source out of the deploy.
-- **Related project:** the sales/marketing portfolio — repo `James-Bonaguro/henry-portfolio`, live at `intersectionstrategies.co`, Vercel project `intersectionstrategies`. Its "Training & Enablement → AI Onboarding" card (section 07) should link to the live app URL above, **not** the old GitHub repo. This project graduated from "a linked repo" to a full teaching app.
+- **Related project:** the sales/marketing portfolio — repo `James-Bonaguro/henry-portfolio`, live at `intersectionstrategies.co`, Vercel project `intersectionstrategies`. Its "Training & Enablement → AI Onboarding" card (section 07) links to the live app URL above (this loop is closed as of the v2 launch — it no longer points at the GitHub repo). This project graduated from "a linked repo" to a full teaching app.
 - Cross-session note: separate Claude Code sessions do **not** share live memory, even within one group. Durable context for future sessions lives here in `CLAUDE.md` and in committed notes — keep this section current.
 
 ## Design language (non-negotiable)
